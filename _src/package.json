@@ -1,0 +1,17 @@
+{
+	"name": "wp-starter",
+	"version": "0.1.0",
+	"description": "Dependencies for the WP Starter theme",
+	"repository": "github:lopadz/wp-starter",
+	"private": true,
+	"license": "MIT",
+	"dependencies": {
+		"aos": "^2.3.3",
+		"blazy": "^1.8.2",
+		"font-awesome-sass": "^4.7.0",
+		"node-normalize-scss": "^8.0.0"
+	},
+	"devDependencies": {
+		"bourbon-neat": "^3.0.0"
+	}
+}

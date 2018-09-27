@@ -1,0 +1,10 @@
+/* --- Forms --- */
+
+form {
+	input {
+		padding: $spacing-sm $spacing-md;
+	}
+	button, input, textarea {
+		font-size: .9rem;
+	}
+}

@@ -1,0 +1,25 @@
+/* --- Borders --- */
+
+.b- {
+	&none { border: none; }
+
+	&w- {
+		&xs { border-width: $border-width-xs; border-style: solid; }
+		&sm { border-width: $border-width-sm; border-style: solid; }
+		&md { border-width: $border-width-md; border-style: solid; }
+		&lg { border-width: $border-width-lg; border-style: solid; }
+		&xl { border-width: $border-width-xl; border-style: solid; }
+	}
+
+	&c- {
+		&primary   { border-color: $color-primary; }
+		&secondary { border-color: $color-secondary; }
+		&success   { border-color: $color-success; }
+		&info      { border-color: $color-info; }
+		&warning   { border-color: $color-warning; }
+		&error     { border-color: $color-error; }
+		&black     { border-color: $black; }
+		&white     { border-color: $white; }
+	}
+		
+}

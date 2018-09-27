@@ -1,0 +1,25 @@
+.button {
+	-webkit-appearance: none;
+	background-color: $color-primary;
+	border: none;
+	color: $color-secondary;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: $spacing-md;
+	padding: $spacing-sm $spacing-md;
+	text-decoration: none;
+	transition: all $time-fast ease-out;
+
+	&:hover {
+		background-color: $color-secondary;
+		color: $color-primary;
+	}
+
+	&-secondary {
+		background-color: $color-secondary;
+		color: $white;
+		padding: $spacing-sm $spacing-md;
+		text-decoration: none;
+	}
+
+}

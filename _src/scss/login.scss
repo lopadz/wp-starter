@@ -1,0 +1,28 @@
+@import 'settings/vars';
+@import 'settings/util';
+
+//  Logo
+.login h1 a {
+    // background-image: url('../img/login-logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 100%;
+}
+
+// Wordpress UI
+.wp-core-ui .button-primary {
+    background: $color-primary;
+    border-color: darken($color-primary, 5%);
+    box-shadow: 0 1px 0 darken($color-primary, 10%);
+    color: $white;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px rgba($black, .5);
+
+    &:hover, &:focus {
+        background: darken($color-primary, 3%);
+        border-color: darken($color-primary, 7%);
+        box-shadow: 0 1px 0 darken($color-primary, 10%);        
+    }
+}

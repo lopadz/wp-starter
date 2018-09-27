@@ -1,0 +1,39 @@
+.wp-templates {
+    background: rgba($color-error, .75);
+    border: none;
+    color: white;
+    display: block;
+    padding: 2em;
+
+    position: fixed;
+    top: 0;
+    // bottom: 0;
+    right: 0;
+    z-index: 999;
+
+    span {
+        display: block;
+    }
+}
+
+.wp-scripts {
+    background: rgba($color-info, .75);
+    border: none;
+    color: white;
+    display: block;
+    padding: 2em;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    span {
+        display: block;
+    }
+}
+
+// Add Visual Grid
+.container {
+	@include grid-visual;
+}

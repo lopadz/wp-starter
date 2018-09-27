@@ -1,0 +1,26 @@
+/* --- Position --- */
+
+.align- {
+
+	&center { text-align: center; }
+	&left   { text-align: left; }
+	&right  { text-align: right; }
+
+}
+
+.d-{
+
+	&block    { display: block; }
+	&in_block { display: inline-block; }
+	&inline   { display: inline; }
+	
+}
+
+.p- {
+
+	&uns { position: unset; }
+	&abs { position: absolute; }
+	&fix { position: fixed; }
+	&rel { position: relative; }
+
+}

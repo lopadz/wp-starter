@@ -1,0 +1,13 @@
+#site-footer {
+
+	.credit {
+		display: block;
+	}
+
+	@include breakpoint( medium ) {
+		.credit {
+			display: inline;
+		}
+	}
+
+}

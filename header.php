@@ -1,0 +1,64 @@
+<?php
+
+/*
+
+	Global Theme Header
+
+*/
+
+// Prevent direct access through URL
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+
+	<!-- Favicons -->
+	<!-- Credit: https://realfavicongenerator.net/ -->
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>	
+	<![endif]-->
+	<?php wp_head(); ?>
+
+</head>
+
+<body <?php body_class(); ?>>
+
+<div class="site-wrap">
+
+	<header id="site-header">
+
+		<div class="container p-v-md">
+
+			<div class="col sm-12 md-5 branding">
+				<div class="logo">
+					<h1><a href="<?php echo esc_url( home_url() ); ?>"><?php echo bloginfo( 'name' ); ?>&trade;</a></h1>
+				</div>
+			</div>
+
+			<div class="col sm-12 md-7 search">
+				<form class="search-form" action="/" method="get">
+					<input type="text" placeholder="Looking for..." name="s" id="search" required/>
+					<button class="button f-upper f-bold" type="submit">Search</button>
+				</form>
+			</div>
+
+		</div>
+
+		<a href="javascript:void(0);" class="menu-button">Menu</a>
+
+		<nav class="container expand main-navigation">
+			<?php wps_top_nav(); ?>
+		</nav>
+
+	</header>
+
+	<div id="site-content">
