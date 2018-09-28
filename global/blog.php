@@ -15,7 +15,23 @@
 
 		<p class="f-s-5"><b>Location:</b> <span class="f-info d-block">{theme_dir}/global/blog.php</span></p>
 
-		<?php the_content(); ?>
+	</div>
+
+	<div class="container">
+
+		<?php
+		if ( have_posts() ) :
+
+			while ( have_posts() ) :
+
+				the_post();
+
+				the_content();
+
+			endwhile;
+
+		endif;
+		?>
 
 	</div>
 

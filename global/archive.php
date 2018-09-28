@@ -15,8 +15,6 @@
 
 		<p class="f-s-5"><b>Location:</b> <span class="f-info d-block">{theme_dir}/global/archive.php</span></p>
 
-		<?php the_content(); ?>
-
 	</div>
 
 </section>
