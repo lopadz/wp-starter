@@ -38,11 +38,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<header id="site-header">
 
-		<div class="container p-v-md">
+		<div class="container collapse p-v-md">
 
 			<div class="col sm-12 md-5 branding">
 				<div class="logo">
-					<h1><a href="<?php echo esc_url( home_url() ); ?>"><?php echo bloginfo( 'name' ); ?>&trade;</a></h1>
+					<h1><a href="<?php echo esc_url( home_url() ); ?>"><?php echo bloginfo( 'name' ); ?></a></h1>
 				</div>
 			</div>
 
