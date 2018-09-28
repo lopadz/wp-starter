@@ -9,8 +9,8 @@
 // 8. Time
 
 // 1. BRANDING
-$color-primary:   #00cf91;
-$color-secondary: #143241;
+$color-primary:   #125EAA;
+$color-secondary: #1A1A1A;
 $color-success:   #30A451;
 $color-info:      #1266BB;
 $color-warning:   #E07C30;
@@ -18,14 +18,22 @@ $color-error:     #D1452D;
 $black:           #1A1A1A;
 $white:           #f9f9f9;
 
+$global-font-size:   16px;
+$global-font-weight: 400;
+$global-font-light:  300;
+$global-font-bold:   700;
+$global-line-height: 1.45;
+
 $global-body-color:          $black;
-$global-heading-color:       $color-secondary;
-$global-body-font-family:    'Lato', Helvetica, 'Helvetica neue', arial, sans-serif;
-$global-heading-font-family: $global-body-font-family;
-$global-font-size:           16px;
-$global-font-weight:         400;
-$global-font-bold:           700;
-$global-line-height:         1.45;
+$global-body-font-family:    'Lora', Georgia, 'Times New Roman', Times, serif;
+$global-body-font-weight:    $global-font-weight;
+$global-body-letter-spacing: 0;
+
+$global-heading-color:          $color-secondary;
+$global-heading-font-family:    'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$global-heading-font-weight:    $global-font-bold;
+$global-heading-letter-spacing: 1px;
+
 
 // 2. TYPOGRAPHY
 $serif-font-family: georgia, serif;
