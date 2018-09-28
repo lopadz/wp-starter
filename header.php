@@ -32,6 +32,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <body <?php body_class(); ?>>
 
+<a class="hidden" href="#site-content">Skip to main content</a>
+
 <div class="site-wrap">
 
 	<header id="site-header">
