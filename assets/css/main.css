@@ -1272,6 +1272,10 @@ h6 { font-size: 1.25rem; }
 
 .f-error { color: #D1452D; }
 
+.f-body { font-family: "Lato", Helvetica, "Helvetica neue", arial, sans-serif; }
+
+.f-heading { font-family: "Lato", Helvetica, "Helvetica neue", arial, sans-serif; }
+
 .f-light { font-weight: 300; }
 
 .f-bold { font-weight: 700; }

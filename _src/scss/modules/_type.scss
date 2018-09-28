@@ -45,6 +45,9 @@ h6 { font-size: $font-size-6; }
 	&warning   { color: $color-warning; }
 	&error     { color: $color-error; }
 
+	&body    { font-family: $global-body-font-family; }
+	&heading { font-family: $global-heading-font-family; }
+
 	&light { font-weight: 300; }
 	&bold  { font-weight: 700; }
 
