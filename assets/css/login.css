@@ -8,18 +8,18 @@
 }
 
 .wp-core-ui .button-primary {
-  background: #125EAA;
-  border-color: #105193;
-  -webkit-box-shadow: 0 1px 0 #0d457c;
-          box-shadow: 0 1px 0 #0d457c;
+  background: #12aa2b;
+  border-color: #109325;
+  -webkit-box-shadow: 0 1px 0 #0d7c1f;
+          box-shadow: 0 1px 0 #0d7c1f;
   color: #f9f9f9;
   text-decoration: none;
   text-shadow: 0 -1px 1px rgba(26, 26, 26, 0.5);
 }
 
 .wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus {
-  background: #11569c;
-  border-color: #0f4c8a;
-  -webkit-box-shadow: 0 1px 0 #0d457c;
-          box-shadow: 0 1px 0 #0d457c;
+  background: #119c28;
+  border-color: #0f8a23;
+  -webkit-box-shadow: 0 1px 0 #0d7c1f;
+          box-shadow: 0 1px 0 #0d7c1f;
 }
