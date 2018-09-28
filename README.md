@@ -7,6 +7,15 @@ If you're not a big fan of the way WP template & theme files are organized, here
 ### **_src/**
 Includes the SCSS and JS files that will need to be compiled during development. Use Yarn to download the dependencies. Codekit is highly recommended.
 
+#### _src/scss/modules/
+Using a kind of atomic design, these modules help with things like position, grid, and typography. It's very minimal, but extensible enough to fit your layout needs.
+
+#### _src/scss/settings/
+Mixins and variables used throughout the modules and theme.
+
+#### _src/scss/theme/
+It follows the theme folders and files to better mantain the site's styles.
+
 ### **func/**
 Loads all the different functions and hooks used throughout the theme.
 
