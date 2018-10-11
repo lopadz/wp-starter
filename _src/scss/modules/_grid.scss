@@ -24,6 +24,7 @@ $grid-collapsed: (
 }
 
 .col {
+	overflow-wrap: break-word;
 
 	&-12 { @include grid-column(12); }
 	&-11 { @include grid-column(11); }
@@ -37,6 +38,51 @@ $grid-collapsed: (
 	&-3  { @include grid-column(3); }
 	&-2  { @include grid-column(2); }
 	&-1  { @include grid-column(1); }
+
+	&.sm- {
+		&12 { @include grid-column(12); }
+		&11 { @include grid-column(11); }
+		&10 { @include grid-column(10); }
+		&9  { @include grid-column(9); }
+		&8  { @include grid-column(8); }
+		&7  { @include grid-column(7); }
+		&6  { @include grid-column(6); }
+		&5  { @include grid-column(5); }
+		&4  { @include grid-column(4); }
+		&3  { @include grid-column(3); }
+		&2  { @include grid-column(2); }
+		&1  { @include grid-column(1); }
+	}
+
+	&-push- {
+		&12 { @include grid-push(12); }
+		&11 { @include grid-push(11); }
+		&10 { @include grid-push(10); }
+		&9  { @include grid-push(9); }
+		&8  { @include grid-push(8); }
+		&7  { @include grid-push(7); }
+		&6  { @include grid-push(6); }
+		&5  { @include grid-push(5); }
+		&4  { @include grid-push(4); }
+		&3  { @include grid-push(3); }
+		&2  { @include grid-push(2); }
+		&1  { @include grid-push(1); }
+	}
+	
+	&-pull- {
+		&12 { @include grid-shift(12); }
+		&11 { @include grid-shift(11); }
+		&10 { @include grid-shift(10); }
+		&9  { @include grid-shift(9); }
+		&8  { @include grid-shift(8); }
+		&7  { @include grid-shift(7); }
+		&6  { @include grid-shift(6); }
+		&5  { @include grid-shift(5); }
+		&4  { @include grid-shift(4); }
+		&3  { @include grid-shift(3); }
+		&2  { @include grid-shift(2); }
+		&1  { @include grid-shift(1); }
+	}
 
 	@include breakpoint( small ) {
 		&.sm- {
@@ -180,36 +226,6 @@ $grid-collapsed: (
 		}
 	}
 
-	&-push- {
-		&12 { @include grid-push(12); }
-		&11 { @include grid-push(11); }
-		&10 { @include grid-push(10); }
-		&9  { @include grid-push(9); }
-		&8  { @include grid-push(8); }
-		&7  { @include grid-push(7); }
-		&6  { @include grid-push(6); }
-		&5  { @include grid-push(5); }
-		&4  { @include grid-push(4); }
-		&3  { @include grid-push(3); }
-		&2  { @include grid-push(2); }
-		&1  { @include grid-push(1); }
-	}
-	
-	&-pull- {
-		&12 { @include grid-shift(12); }
-		&11 { @include grid-shift(11); }
-		&10 { @include grid-shift(10); }
-		&9  { @include grid-shift(9); }
-		&8  { @include grid-shift(8); }
-		&7  { @include grid-shift(7); }
-		&6  { @include grid-shift(6); }
-		&5  { @include grid-shift(5); }
-		&4  { @include grid-shift(4); }
-		&3  { @include grid-shift(3); }
-		&2  { @include grid-shift(2); }
-		&1  { @include grid-shift(1); }
-	}
-
 }
 
 $neat-grid-collapsed: (
@@ -219,23 +235,35 @@ $neat-grid-collapsed: (
 
 .collapse {
 
-	> .col- {
-
-		&12 { @include grid-column(12, $neat-grid-collapsed); }
-		&11 { @include grid-column(11, $neat-grid-collapsed); }
-		&10 { @include grid-column(10, $neat-grid-collapsed); }
-		&9  { @include grid-column(9, $neat-grid-collapsed); }
-		&8  { @include grid-column(8, $neat-grid-collapsed); }
-		&7  { @include grid-column(7, $neat-grid-collapsed); }
-		&6  { @include grid-column(6, $neat-grid-collapsed); }
-		&5  { @include grid-column(5, $neat-grid-collapsed); }
-		&4  { @include grid-column(4, $neat-grid-collapsed); }
-		&3  { @include grid-column(3, $neat-grid-collapsed); }
-		&2  { @include grid-column(2, $neat-grid-collapsed); }
-		&1  { @include grid-column(1, $neat-grid-collapsed); }
-	}
-
 	> .col {
+
+		&-12 { @include grid-column(12, $neat-grid-collapsed); }
+		&-11 { @include grid-column(11, $neat-grid-collapsed); }
+		&-10 { @include grid-column(10, $neat-grid-collapsed); }
+		&-9  { @include grid-column(9, $neat-grid-collapsed); }
+		&-8  { @include grid-column(8, $neat-grid-collapsed); }
+		&-7  { @include grid-column(7, $neat-grid-collapsed); }
+		&-6  { @include grid-column(6, $neat-grid-collapsed); }
+		&-5  { @include grid-column(5, $neat-grid-collapsed); }
+		&-4  { @include grid-column(4, $neat-grid-collapsed); }
+		&-3  { @include grid-column(3, $neat-grid-collapsed); }
+		&-2  { @include grid-column(2, $neat-grid-collapsed); }
+		&-1  { @include grid-column(1, $neat-grid-collapsed); }
+
+		&.sm- {
+			&12 { @include grid-column(12, $neat-grid-collapsed); }
+			&11 { @include grid-column(11, $neat-grid-collapsed); }
+			&10 { @include grid-column(10, $neat-grid-collapsed); }
+			&9  { @include grid-column(9, $neat-grid-collapsed); }
+			&8  { @include grid-column(8, $neat-grid-collapsed); }
+			&7  { @include grid-column(7, $neat-grid-collapsed); }
+			&6  { @include grid-column(6, $neat-grid-collapsed); }
+			&5  { @include grid-column(5, $neat-grid-collapsed); }
+			&4  { @include grid-column(4, $neat-grid-collapsed); }
+			&3  { @include grid-column(3, $neat-grid-collapsed); }
+			&2  { @include grid-column(2, $neat-grid-collapsed); }
+			&1  { @include grid-column(1, $neat-grid-collapsed); }
+		}
 
 		@include breakpoint( small ) {
 			&.sm- {

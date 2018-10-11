@@ -28,7 +28,7 @@ function wps_pagination() {
 
 	// Display the pagination if more than one page is found.
 	if ( $paginate_links ) {
-		echo '<div class="column small-12">';
+		echo '<div class="col sm-12">';
 		echo wp_kses_post( $paginate_links );
 		echo '</div><!--// end .pagination -->';
 	}
