@@ -7,10 +7,11 @@
 // 6. Borders
 // 7. Box Shadows
 // 8. Time
+// 9. Tint/Shade
 
 // 1. BRANDING
 $color-primary:   #12aa2b;
-$color-secondary: #1A1A1A;
+$color-secondary: #1b2c38;
 $color-success:   #30A451;
 $color-info:      #1266BB;
 $color-warning:   #E07C30;
@@ -97,3 +98,29 @@ $time-fast:      .25s;
 $time-normal:    .45s;
 $time-slow:      .65s;
 $time-superslow: 1s;
+
+// 9. TINT/SHADE
+
+$color-primary-t1: mix(white, $color-primary, 10%);
+$color-primary-t2: mix(white, $color-primary, 20%);
+$color-primary-t3: mix(white, $color-primary, 30%);
+$color-primary-t4: mix(white, $color-primary, 40%);
+$color-primary-t5: mix(white, $color-primary, 50%);
+
+$color-primary-s1: mix(black, $color-primary, 10%);
+$color-primary-s2: mix(black, $color-primary, 20%);
+$color-primary-s3: mix(black, $color-primary, 30%);
+$color-primary-s4: mix(black, $color-primary, 40%);
+$color-primary-s5: mix(black, $color-primary, 50%);
+
+$color-secondary-t1: mix(white, $color-primary, 10%);
+$color-secondary-t2: mix(white, $color-primary, 20%);
+$color-secondary-t3: mix(white, $color-primary, 30%);
+$color-secondary-t4: mix(white, $color-primary, 40%);
+$color-secondary-t5: mix(white, $color-primary, 50%);
+
+$color-secondary-s1: mix(black, $color-primary, 10%);
+$color-secondary-s2: mix(black, $color-primary, 20%);
+$color-secondary-s3: mix(black, $color-primary, 30%);
+$color-secondary-s4: mix(black, $color-primary, 40%);
+$color-secondary-s5: mix(black, $color-primary, 50%);
