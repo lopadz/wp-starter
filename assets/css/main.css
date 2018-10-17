@@ -1823,8 +1823,8 @@ nav.woocommerce-pagination ul.page-numbers li { display: inline-block; }
 #site-header .search-form .button:hover { background-color: #12aa2b; border: 0.125rem solid #12aa2b; color: #1A1A1A; }
 
 @media screen and (min-width: 768px) { #site-header .search-form { padding-bottom: 0; }
-  #site-header .search-form input { margin-top: 12px; width: 65%; }
-  #site-header .search-form .button { width: 30%; } }
+  #site-header .search-form input { width: 65%; }
+  #site-header .search-form .button { margin-top: 0; width: 30%; } }
 
 #site-footer .credit { display: block; }
 
