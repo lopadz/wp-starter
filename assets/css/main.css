@@ -695,9 +695,11 @@ table { border-spacing: 0; width: 100%; }
 .b-c-white { border-color: #f9f9f9; }
 
 /* --- Forms --- */
-form input { padding: 0.5em 1em; }
+form button, form input, form textarea { font-size: 1rem; line-height: 1.45; padding: 0.5em 1em; vertical-align: middle; }
 
-form button, form input, form textarea { font-size: .9rem; }
+form .button { line-height: 1.45; }
+
+@media screen and (min-width: 768px) { form .button { margin-top: 0; } }
 
 /* --- Grid --- */
 .container { margin: auto; max-width: 1300px; }

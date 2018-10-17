@@ -1,10 +1,20 @@
 /* --- Forms --- */
 
 form {
-	input {
-		padding: $spacing-sm $spacing-md;
-	}
+
 	button, input, textarea {
-		font-size: .9rem;
+		font-size: 1rem;
+		line-height: $global-line-height;
+		padding: $spacing-sm $spacing-md;
+		vertical-align: middle;
+	}
+	.button {
+		line-height: $global-line-height;
+	}
+
+	@include breakpoint ( medium ) {
+		.button {
+			margin-top: 0;
+		}
 	}
 }
