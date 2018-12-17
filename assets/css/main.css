@@ -657,11 +657,19 @@ body { color: #1A1A1A; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, 
 
 a { color: #12aa2b; }
 
-p { margin: 0; }
+address { font-style: normal; }
+
+figure { margin: 0; padding: 0; }
 
 img { display: block; }
 
-figure { margin: 0; padding: 0; }
+img.size-full { height: auto; width: 100%; }
+
+ins { text-decoration: none; }
+
+p { margin: 0.5em 0 1em 0; }
+
+p:last-of-type { margin-bottom: 0.5em; }
 
 table { border-spacing: 0; width: 100%; }
 
@@ -1625,6 +1633,8 @@ h6 { font-size: 1.125rem; letter-spacing: 0; }
 .branding .logo h1 { overflow: hidden; }
 
 .branding .logo h1 a { background-position: left center; background-repeat: no-repeat; -webkit-background-size: contain; background-size: contain; width: 100%; text-decoration: none; }
+
+button { -webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: transparent; border: none; }
 
 .button { -webkit-appearance: none; background-color: #12aa2b; border: none; color: #1b2c38; cursor: pointer; display: inline-block; margin-top: 1em; padding: 0.5em 1em; text-decoration: none; -webkit-transition: all 0.25s ease-out; transition: all 0.25s ease-out; }
 
