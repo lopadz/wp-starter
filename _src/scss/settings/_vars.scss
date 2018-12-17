@@ -40,16 +40,16 @@ $global-heading-letter-spacing: $global-body-letter-spacing;
 $serif-font-family: georgia, serif;
 $code-font-family:  consolas, monaco, monospace;
 
-$font-size-headline:    5rem;
-$font-size-subheadline: 4rem;
+$font-size-headline:    2rem;
+$font-size-subheadline: 1.75rem;
 
-$font-size-1: 2.5rem;
-$font-size-2: 2.25rem;
-$font-size-3: 2rem;
-$font-size-4: 1.75rem;
-$font-size-5: 1.5rem;
-$font-size-6: 1.25rem;
-$font-size-7: 1rem;
+$font-size-1: 1.875rem; // 30px
+$font-size-2: 1.625rem; // 26px
+$font-size-3: 1.5rem;   // 24px
+$font-size-4: 1.375rem; // 22px
+$font-size-5: 1.25rem;  // 20px
+$font-size-6: 1.125rem; // 18px
+$font-size-7: 1rem;     // 16px
 
 // 3. SPACING
 $spacing-none: 0;
