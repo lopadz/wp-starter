@@ -51,21 +51,23 @@ function wps_custom_menu_order( $menu_ord ) {
 
 	return array(
 		'index.php', // Dashboard
+		'edit.php?post_type=acf-field-group', // ACF Custom Fields
 		'theme-general-settings', // Theme Settings
+		// 'woocommerce',
+		// 'edit.php?post_type=product',
+		'upload.php', // Media
 		'separator1', // First separator
 		'edit.php?post_type=page', // Pages
 		'edit.php', // Posts
-		'upload.php', // Media
 		'link-manager.php', // Links
 		'edit-comments.php', // Comments
-		// 'edit.php?post_type=cpt_name', // Custom Post Type
 		'separator2', // Second separator
 		'themes.php', // Appearance
-		'options-general.php', // Settings
+		'plugins.php', // Plugins
 		'tools.php', // Tools
 		'users.php', // Users
+		'options-general.php', // Settings
 		'separator-last', // Last separator
-		'plugins.php', // Plugins
 	);
 }
 add_filter( 'custom_menu_order', 'wps_custom_menu_order', 10, 1 );
