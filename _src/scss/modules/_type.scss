@@ -2,6 +2,7 @@
 
 // Headings
 @include headings() {
+	color: $global-heading-color;
 	font-family: $global-heading-font-family;
 	font-weight: $global-heading-font-weight;
 	line-height: 1.2;
