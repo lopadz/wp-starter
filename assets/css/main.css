@@ -1229,6 +1229,8 @@ form .button { line-height: 1.45; }
   .collapse > .col.lg-shift-1 { left: -webkit-calc(8.3333333333% + 0em); left: calc(8.3333333333% + 0em); position: relative; } }
 
 /* --- Margins --- */
+.m-auto { margin: auto; }
+
 .m-0 { margin: 0; }
 
 .m-xs { margin: 0.25em; }
