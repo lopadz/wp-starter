@@ -1,42 +1,45 @@
-// TABLE OF CONTENTS:
-// 1. Branding
-// 2. Typography
-// 3. Spacing
-// 4. Breakpoints
-// 5. Grid
-// 6. Borders
-// 7. Box Shadows
-// 8. Time
-// 9. Tint/Shade
+/* =======================================
+	COLORS
+*/
+$color-primary:   #430ae0;
+$color-secondary: #dd0a50;
 
-// 1. BRANDING
-$color-primary:   #12aa2b;
-$color-secondary: #1b2c38;
-$color-success:   #30A451;
-$color-info:      #1266BB;
-$color-warning:   #E07C30;
-$color-error:     #D1452D;
-$black:           #1A1A1A;
-$white:           #f9f9f9;
+$color-success:   #30a451;
+$color-info:      #1266bb;
+$color-warning:   #e67620;
+$color-error:     #d1452d;
 
-$global-font-size:   16px;
-$global-font-weight: 400;
-$global-font-light:  300;
-$global-font-bold:   700;
-$global-line-height: 1.45;
+$black:           #222;
+$white:           #fff;
+$light-gray:      #e9e9e9;
 
-$global-body-color:          $black;
-$global-body-font-family:    'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$global-body-font-weight:    $global-font-weight;
-$global-body-letter-spacing: 0;
+/* =======================================
+	GLOBALS
+*/
+$global-border-radius:  0;
+$global-border-width:   1px;
+$global-font-size:      16px;
+$global-font-weight:    400;
+$global-font-light:     300;
+$global-font-bold:      700;
+$global-max-width:      1200px;
 
-$global-heading-color:          $color-secondary;
-$global-heading-font-family:    $global-body-font-family;
-$global-heading-font-weight:    $global-font-bold;
-$global-heading-letter-spacing: $global-body-letter-spacing;
+$body-color:          $black;
+$body-font-family:    'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-font-weight:    $global-font-weight;
+$body-letter-spacing: 0;
+$body-line-height:    1.5;
+
+$heading-color:          $color-primary;
+$heading-font-family:    'PT Serif', serif;
+$heading-font-weight:    $global-font-weight;
+$heading-letter-spacing: 0;
+$heading-line-height:    1.5;
 
 
-// 2. TYPOGRAPHY
+/* =======================================
+	TYPOGRAPHY
+*/
 $serif-font-family: georgia, serif;
 $code-font-family:  consolas, monaco, monospace;
 
@@ -51,8 +54,10 @@ $font-size-5: 1.25rem;  // 20px
 $font-size-6: 1.125rem; // 18px
 $font-size-7: 1rem;     // 16px
 
-// 3. SPACING
-$spacing-none: 0;
+
+/* =======================================
+	SPACING
+*/
 $spacing-xs:   .25em;
 $spacing-sm:   .5em;
 $spacing-md:   1em;
@@ -61,66 +66,27 @@ $spacing-xl:   3em;
 $spacing-xxl:  7em;
 $spacing-xxxl: 10em;
 
-// 4. BREAKPOINTS
+
+/* =======================================
+	BREAKPOINTS
+*/
 $breakpoint-small:  767px; // max-width
 $breakpoint-medium: 768px; // min-width
 $breakpoint-large:  1200px; // min-width
-$global-max-width: 1300px;
 
-// 5. GRID
+
+/* =======================================
+	GRID
+*/
 $grid-columns: 12;
 $grid-gutter:  $spacing-md;
 
-// 6. BORDERS
-$border-radius-none:   0;
-$border-radius-1:      0.125rem;
-$border-radius-2:      0.25rem;
-$border-radius-3:      0.5rem;
-$border-radius-4:      1rem;
-$border-radius-circle: 100%;
-$border-radius-pill:   9999px;
-$border-width-xs:       .125rem;
-$border-width-sm:       .25rem;
-$border-width-md:       .5rem;
-$border-width-lg:       1rem;
-$border-width-xl:       2rem;
 
-// 7. BOX SHADOWS
-$box-shadow-1: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 );
-$box-shadow-2: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 );
-$box-shadow-3: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 );
-$box-shadow-4: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 );
-$box-shadow-5: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 );
-
-// 8. TIME
+/* =======================================
+	TIME
+*/
 $time-superfast: .15s;
 $time-fast:      .25s;
 $time-normal:    .45s;
 $time-slow:      .65s;
 $time-superslow: 1s;
-
-// 9. TINT/SHADE
-
-$color-primary-t1: mix(white, $color-primary, 10%);
-$color-primary-t2: mix(white, $color-primary, 20%);
-$color-primary-t3: mix(white, $color-primary, 30%);
-$color-primary-t4: mix(white, $color-primary, 40%);
-$color-primary-t5: mix(white, $color-primary, 50%);
-
-$color-primary-s1: mix(black, $color-primary, 10%);
-$color-primary-s2: mix(black, $color-primary, 20%);
-$color-primary-s3: mix(black, $color-primary, 30%);
-$color-primary-s4: mix(black, $color-primary, 40%);
-$color-primary-s5: mix(black, $color-primary, 50%);
-
-$color-secondary-t1: mix(white, $color-primary, 10%);
-$color-secondary-t2: mix(white, $color-primary, 20%);
-$color-secondary-t3: mix(white, $color-primary, 30%);
-$color-secondary-t4: mix(white, $color-primary, 40%);
-$color-secondary-t5: mix(white, $color-primary, 50%);
-
-$color-secondary-s1: mix(black, $color-primary, 10%);
-$color-secondary-s2: mix(black, $color-primary, 20%);
-$color-secondary-s3: mix(black, $color-primary, 30%);
-$color-secondary-s4: mix(black, $color-primary, 40%);
-$color-secondary-s5: mix(black, $color-primary, 50%);

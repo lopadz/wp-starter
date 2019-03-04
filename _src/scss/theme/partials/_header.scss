@@ -14,11 +14,11 @@
 		text-align: right;
 
 		input {
-			border: $border-width-xs solid $color-secondary;
+			border: $global-border-width solid $color-secondary;
 			width: 100%;
 		}
 		.button {
-			border: $border-width-xs solid $color-secondary;
+			border: $global-border-width solid $color-secondary;
 			background-color: $color-secondary;
 			color: $white;
 			margin-top: $spacing-sm;
@@ -28,7 +28,7 @@
 
 			&:hover {
 				background-color: $color-primary;
-				border: $border-width-xs solid $color-primary;
+				border: $global-border-width solid $color-primary;
 				color:$color-secondary;
 			}
 		}

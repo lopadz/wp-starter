@@ -7,31 +7,36 @@
 */
 @charset 'utf-8';
 
-// ========== SETTINGS ==========
-// Vars, mixins, etc...
-
+/* ============================================== 
+	SETTINGS & TOOLS 
+	Vars, mixins, etc...
+*/
 @import './settings/vars';
 @import './settings/util';
 
 
-/* ========== VENDOR ========== */
-// 3rd-party libraries, etc...
-
+/* ============================================== 
+	VENDOR
+	3rd-party libraries, etc...
+*/
 // Bourbon Neat Grid
 @import '../node_modules/bourbon-neat/core/neat';
 // Normalize.css
 @import '../node_modules/node-normalize-scss/normalize';
 // AOS (Animated On Scroll)
 @import '../node_modules/aos/src/sass/aos';
+// Owl Carousel 2
+@import '../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 
 
-/* ========== MODULES ========== */
-// CSS Framework - Change/use as necessary
-
+/* ============================================== 
+	MODULES 
+	CSS Framework - Change/use as necessary
+*/
 @import './modules/backgrounds';
 @import './modules/base';
-@import './modules/borders';
 @import './modules/forms';
+@import './modules/fx';
 @import './modules/grid';
 @import './modules/margin';
 @import './modules/menus';
@@ -41,14 +46,17 @@
 @import './modules/z-index';
 
 
-/* ========== THEME ========== */
-
+/* ============================================== 
+	THEME 
+*/
 // Components
 @import './theme/components/branding';
 @import './theme/components/buttons';
 @import './theme/components/gallery';
 @import './theme/components/navigation';
 @import './theme/components/woo';
+@import './theme/components/vendor/owl-carousel';
+
 
 // Partials
 @import './theme/partials/header';
@@ -71,6 +79,7 @@
 @import './theme/pages/home';
 
 
-/* ========== TESTS ========== */
-
+/* ============================================== 
+	TESTS
+*/
 // @import './tests';

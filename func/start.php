@@ -115,6 +115,9 @@ function wps_start() {
 	// Stop WordPress from using the sticky class on sticky blog posts
 	add_filter( 'post_class', 'wps_remove_sticky_class' );
 
+	// Enable SVG files to be uploaded to Media
+	add_filter( 'upload_mimes', 'cc_mime_types' );
+
 }
 
 // Remove injected CSS from recent comments widget
@@ -160,4 +163,10 @@ function wps_remove_sticky_class( $classes ) {
 	}
 
 	return $classes;
+}
+
+// Enable SVG files to be uploaded to Media
+function cc_mime_types( $mimes ) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
 }

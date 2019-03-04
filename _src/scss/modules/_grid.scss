@@ -1,5 +1,6 @@
 /* --- Grid --- */
 
+
 $neat-grid: (
   columns: $grid-columns,
   gutter: $grid-gutter,
@@ -9,6 +10,7 @@ $grid-collapsed: (
   columns: $grid-columns,
   gutter: 0em,
 );
+
 
 .container {
 	@include grid-container;
@@ -22,6 +24,7 @@ $grid-collapsed: (
 	}
 
 }
+
 
 .col {
 	overflow-wrap: break-word;

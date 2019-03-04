@@ -1,37 +1,39 @@
 /* --- Typography --- */
 
+
 // Headings
 @include headings() {
-	color: $global-heading-color;
-	font-family: $global-heading-font-family;
-	font-weight: $global-heading-font-weight;
-	line-height: 1.2;
+	color: $heading-color;
+	font-family: $heading-font-family;
+	font-weight: $heading-font-weight;
+	letter-spacing: $heading-letter-spacing;
+	line-height: $heading-line-height;
 	margin: 0;
 }
 
-h1 { font-size: $font-size-1; letter-spacing: $global-heading-letter-spacing; }
-h2 { font-size: $font-size-2; letter-spacing: $global-heading-letter-spacing; }
-h3 { font-size: $font-size-3; letter-spacing: $global-heading-letter-spacing; }
-h4 { font-size: $font-size-4; letter-spacing: $global-heading-letter-spacing; }
-h5 { font-size: $font-size-5; letter-spacing: $global-heading-letter-spacing; }
-h6 { font-size: $font-size-6; letter-spacing: $global-heading-letter-spacing; }
+h1 { font-size: $font-size-1; }
+h2 { font-size: $font-size-2; }
+h3 { font-size: $font-size-3; }
+h4 { font-size: $font-size-4; }
+h5 { font-size: $font-size-5; }
+h6 { font-size: $font-size-6; }
 
 @include breakpoint( medium ) {
-	h1 { font-size: $font-size-1 * 1.125; letter-spacing: $global-heading-letter-spacing; }
-	h2 { font-size: $font-size-2 * 1.125; letter-spacing: $global-heading-letter-spacing; }
-	h3 { font-size: $font-size-3 * 1.125; letter-spacing: $global-heading-letter-spacing; }
-	h4 { font-size: $font-size-4 * 1.125; letter-spacing: $global-heading-letter-spacing; }
-	h5 { font-size: $font-size-5 * 1.125; letter-spacing: $global-heading-letter-spacing; }
-	h6 { font-size: $font-size-6 * 1.125; letter-spacing: $global-heading-letter-spacing; }
+	h1 { font-size: $font-size-1 * 1.125; }
+	h2 { font-size: $font-size-2 * 1.125; }
+	h3 { font-size: $font-size-3 * 1.125; }
+	h4 { font-size: $font-size-4 * 1.125; }
+	h5 { font-size: $font-size-5 * 1.125; }
+	h6 { font-size: $font-size-6 * 1.125; }
 }
 
 @include breakpoint( large ) {
-	h1 { font-size: $font-size-1 * 1.25; letter-spacing: $global-heading-letter-spacing; }
-	h2 { font-size: $font-size-2 * 1.25; letter-spacing: $global-heading-letter-spacing; }
-	h3 { font-size: $font-size-3 * 1.25; letter-spacing: $global-heading-letter-spacing; }
-	h4 { font-size: $font-size-4 * 1.25; letter-spacing: $global-heading-letter-spacing; }
-	h5 { font-size: $font-size-5 * 1.25; letter-spacing: $global-heading-letter-spacing; }
-	h6 { font-size: $font-size-6 * 1.25; letter-spacing: $global-heading-letter-spacing; }
+	h1 { font-size: $font-size-1 * 1.25; }
+	h2 { font-size: $font-size-2 * 1.25; }
+	h3 { font-size: $font-size-3 * 1.25; }
+	h4 { font-size: $font-size-4 * 1.25; }
+	h5 { font-size: $font-size-5 * 1.25; }
+	h6 { font-size: $font-size-6 * 1.25; }
 }
 
 
@@ -46,8 +48,8 @@ h6 { font-size: $font-size-6; letter-spacing: $global-heading-letter-spacing; }
 	&warning   { color: $color-warning; }
 	&error     { color: $color-error; }
 
-	&body    { font-family: $global-body-font-family; }
-	&heading { font-family: $global-heading-font-family; }
+	&body    { font-family: $body-font-family; }
+	&heading { font-family: $heading-font-family; }
 
 	&light { font-weight: $global-font-light; }
 	&bold  { font-weight: $global-font-bold; }
@@ -57,7 +59,7 @@ h6 { font-size: $font-size-6; letter-spacing: $global-heading-letter-spacing; }
 
 	&headline    { font-size: $font-size-headline; }
 	&subheadline { font-size: $font-size-subheadline; }
-	&small { font-size: $global-font-size * .75; }
+	&small       { font-size: $global-font-size * .75; }
 	
 	&s-1         { font-size: $font-size-1; }
 	&s-2         { font-size: $font-size-2; }
@@ -71,7 +73,7 @@ h6 { font-size: $font-size-6; letter-spacing: $global-heading-letter-spacing; }
 	@include breakpoint( medium ) {
 		&headline    { font-size: $font-size-headline * 1.125; }
 		&subheadline { font-size: $font-size-subheadline * 1.125; }
-		&small { font-size: $global-font-size * .8125; }
+		&small       { font-size: $global-font-size * .8125; }
 
 		&s-1         { font-size: $font-size-1 * 1.125; }
 		&s-2         { font-size: $font-size-2 * 1.125; }
@@ -85,7 +87,7 @@ h6 { font-size: $font-size-6; letter-spacing: $global-heading-letter-spacing; }
 	@include breakpoint( large ) {
 		&headline    { font-size: $font-size-headline * 1.25; }
 		&subheadline { font-size: $font-size-subheadline * 1.25; }
-		&small { font-size: $global-font-size * .875; }
+		&small       { font-size: $global-font-size * .875; }
 
 		&s-1         { font-size: $font-size-1 * 1.25; }
 		&s-2         { font-size: $font-size-2 * 1.25; }

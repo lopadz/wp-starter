@@ -1,3 +1,24 @@
+/* =======================================
+	COLORS
+*/
+/* =======================================
+	GLOBALS
+*/
+/* =======================================
+	TYPOGRAPHY
+*/
+/* =======================================
+	SPACING
+*/
+/* =======================================
+	BREAKPOINTS
+*/
+/* =======================================
+	GRID
+*/
+/* =======================================
+	TIME
+*/
 .login h1 a {
   background-position: center;
   background-repeat: no-repeat;
@@ -8,18 +29,18 @@
 }
 
 .wp-core-ui .button-primary {
-  background: #12aa2b;
-  border-color: #109325;
-  -webkit-box-shadow: 0 1px 0 #0d7c1f;
-          box-shadow: 0 1px 0 #0d7c1f;
-  color: #f9f9f9;
+  background: #430ae0;
+  border-color: #3c09c8;
+  -webkit-box-shadow: 0 1px 0 #3408af;
+          box-shadow: 0 1px 0 #3408af;
+  color: #fff;
   text-decoration: none;
-  text-shadow: 0 -1px 1px rgba(26, 26, 26, 0.5);
+  text-shadow: 0 -1px 1px rgba(34, 34, 34, 0.5);
 }
 
 .wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus {
-  background: #119c28;
-  border-color: #0f8a23;
-  -webkit-box-shadow: 0 1px 0 #0d7c1f;
-          box-shadow: 0 1px 0 #0d7c1f;
+  background: #3f09d1;
+  border-color: #3908be;
+  -webkit-box-shadow: 0 1px 0 #3408af;
+          box-shadow: 0 1px 0 #3408af;
 }

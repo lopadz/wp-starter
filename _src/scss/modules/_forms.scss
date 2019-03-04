@@ -1,15 +1,16 @@
 /* --- Forms --- */
 
+
 form {
 
 	button, input, textarea {
 		font-size: 1rem;
-		line-height: $global-line-height;
+		line-height: $body-line-height;
 		padding: $spacing-sm $spacing-md;
 		vertical-align: middle;
 	}
 	.button {
-		line-height: $global-line-height;
+		line-height: $body-line-height;
 	}
 
 	@include breakpoint ( medium ) {

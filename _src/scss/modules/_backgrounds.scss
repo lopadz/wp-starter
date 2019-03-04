@@ -1,44 +1,13 @@
 /* --- Backgrounds --- */
+
+
 .bg {
 	
-	&-primary { background-color: $color-primary; }
-	
+	&-primary   { background-color: $color-primary; }
 	&-secondary { background-color: $color-secondary; }
-	
-	&-success { background-color: $color-success; }
-	
-	&-info { background-color: $color-info; }
-	
-	&-warning { background-color: $color-warning; }
-	
-	&-error { background-color: $color-error; }
+	&-success   { background-color: $color-success; }
+	&-info      { background-color: $color-info; }
+	&-warning   { background-color: $color-warning; }
+	&-error     { background-color: $color-error; }
 
-	&-black { 
-		background-color: $black;
-		
-		&-1 { background-color: lighten($black, 80%); }
-		&-2 { background-color: lighten($black, 75%); }
-		&-3 { background-color: lighten($black, 65%); }
-		&-4 { background-color: lighten($black, 55%); }
-		&-5 { background-color: lighten($black, 45%); }
-		&-6 { background-color: lighten($black, 35%); }
-		&-7 { background-color: lighten($black, 25%); }
-		&-8 { background-color: lighten($black, 15%); }
-		&-9 { background-color: lighten($black, 5%); }
-	}
-
-	&-white { 
-		background-color: $white;
-		
-		&-1 { background-color: darken($white, 10%); }
-		&-2 { background-color: darken($white, 15%); }
-		&-3 { background-color: darken($white, 25%); }
-		&-4 { background-color: darken($white, 30%); }
-		&-5 { background-color: darken($white, 40%); }
-		&-6 { background-color: darken($white, 50%); }
-		&-7 { background-color: darken($white, 60%); }
-		&-8 { background-color: darken($white, 60%); }
-		&-9 { background-color: darken($white, 60%); }
-	}
-	
 }
