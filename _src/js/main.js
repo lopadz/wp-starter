@@ -29,6 +29,9 @@ jQuery(document).ready( function($) {
 
 	// Page Fade-in
 	$('.fade-in').addClass('visible');
+	
+	// Init Owl Carousel
+	$('.owl-carousel').owlCarousel();
 
 
 	var mq = window.matchMedia('(max-width: 767px)')
