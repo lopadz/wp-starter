@@ -13,6 +13,7 @@ $black:           #222;
 $white:           #fff;
 $light-gray:      #e9e9e9;
 
+
 /* =======================================
 	GLOBALS
 */
@@ -24,13 +25,13 @@ $global-font-light:     300;
 $global-font-bold:      700;
 $global-max-width:      1200px;
 
-$body-color:          $black;
+$body-font-color:     $black;
 $body-font-family:    'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $body-font-weight:    $global-font-weight;
 $body-letter-spacing: 0;
 $body-line-height:    1.5;
 
-$heading-color:          $color-primary;
+$heading-font-color:     $color-primary;
 $heading-font-family:    'PT Serif', serif;
 $heading-font-weight:    $global-font-weight;
 $heading-letter-spacing: 0;
@@ -85,7 +86,7 @@ $grid-gutter:  $spacing-md;
 /* =======================================
 	TIME
 */
-$time-superfast: .15s;
+$time-superfast: .1s;
 $time-fast:      .25s;
 $time-normal:    .45s;
 $time-slow:      .65s;

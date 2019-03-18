@@ -3,7 +3,7 @@
 
 .fade-in {
     opacity: 0;
-    transition: opacity $time-normal .1s ease-out;
+    transition: opacity $time-normal $time-superfast ease-out;
  }
 
 .visible { opacity: 1; }

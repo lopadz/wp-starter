@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	color: $body-color;
+	color: $body-font-color;
 	font-family: $body-font-family;
 	font-weight: $body-font-weight;
 	line-height: $body-line-height;
@@ -43,12 +43,18 @@ a { color: $color-primary; }
 
 address { font-style: normal; }
 
+button {
+	appearance: none;
+	background-color: transparent;
+	border: none;
+}
+
 figure { margin: 0; padding: 0; }
 
 hr {
 	border-color: $color-secondary;
 	border-style: solid;
-	border-width: 1px;
+	border-width: $global-border-width;
 	clear: both;
 	margin-top: $spacing-md;
 	margin-bottom: $spacing-md;
@@ -77,7 +83,7 @@ p {
 
 table { 
 	border-spacing: 0;
-	line-height: 1;
+	line-height: $body-line-height;
 	text-align: left;
 	width: 100%;
 

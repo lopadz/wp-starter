@@ -3,7 +3,7 @@
 
 // Headings
 @include headings() {
-	color: $heading-color;
+	color: $heading-font-color;
 	font-family: $heading-font-family;
 	font-weight: $heading-font-weight;
 	letter-spacing: $heading-letter-spacing;
