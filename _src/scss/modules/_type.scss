@@ -51,8 +51,8 @@ h6 { font-size: $font-size-6; }
 	&body    { font-family: $body-font-family; }
 	&heading { font-family: $heading-font-family; }
 
-	&light { font-weight: $global-font-light; }
-	&bold  { font-weight: $global-font-bold; }
+	&light { font-weight: $global-font-weight-light; }
+	&bold  { font-weight: $global-font-weight-bold; }
 
 	&upper { text-transform: uppercase; }
 	&lower { text-transform: lowercase; }

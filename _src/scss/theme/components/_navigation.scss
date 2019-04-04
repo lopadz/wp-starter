@@ -2,7 +2,7 @@
 	background-color: $color-secondary;
 	color: $white;
 	display: block;
-	font-weight: $global-font-bold;
+	font-weight: $global-font-weight-bold;
 	padding: $spacing-md;
 	position: relative;
 	text-decoration: none;
@@ -35,7 +35,7 @@
 
 		a {
 			color: $white;
-			font-weight: $global-font-bold;
+			font-weight: $global-font-weight-bold;
 			padding: $spacing-md $spacing-sm;
 			text-transform: uppercase;
 			transition: none;
@@ -77,7 +77,7 @@
 			z-index: 99;
 
 			li { display: block; }
-			a { font-weight: $global-font-weight; }
+			a { font-weight: $global-font-weight-normal; }
 		}
 	}
 }
