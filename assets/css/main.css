@@ -707,8 +707,6 @@ body { color: #222; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, san
 
 ::selection { background-color: #430ae0; color: #fff; }
 
-.site-wrap { overflow: hidden; }
-
 a { color: #430ae0; }
 
 address { font-style: normal; }
@@ -737,31 +735,9 @@ table th, table td { padding: 0.5em; }
 
 table td:nth-of-type(even) { background-color: #e9e9e9; }
 
+.site-wrap { overflow: hidden; }
+
 .no-js { display: none; }
-
-#back-to-top { background-color: #dd0a50; -webkit-border-radius: 0; border-radius: 0; -webkit-box-shadow: 0 0 20px rgba(34, 34, 34, 0.2); box-shadow: 0 0 20px rgba(34, 34, 34, 0.2); color: #fff; cursor: pointer; font-size: 90%; padding: 0.7em 1.2em; opacity: 0; position: fixed; bottom: 2em; right: 2em; z-index: 99; -webkit-transition: all 0.25s ease-out; transition: all 0.25s ease-out; }
-
-#back-to-top .fa { margin-right: 0; padding: 0; -webkit-animation: back-to-top-arrow 1.5s ease-out infinite forwards; animation: back-to-top-arrow 1.5s ease-out infinite forwards; }
-
-#back-to-top:hover { background-color: #bb0844; -webkit-box-shadow: 0 10px 40px rgba(34, 34, 34, 0.1); box-shadow: 0 10px 40px rgba(34, 34, 34, 0.1); -webkit-transform: scale(1.05); transform: scale(1.05); }
-
-#back-to-top.show { opacity: 1; }
-
-@-webkit-keyframes back-to-top-arrow { 0% { opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px); }
-  80% { opacity: 1; }
-  100% { opacity: 0;
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px); } }
-
-@keyframes back-to-top-arrow { 0% { opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px); }
-  80% { opacity: 1; }
-  100% { opacity: 0;
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px); } }
 
 /* --- Forms --- */
 form button, form input, form textarea { font-size: 1rem; line-height: 1.5; padding: 0.5em 1em; vertical-align: middle; }
@@ -1702,11 +1678,35 @@ h6 { font-size: 1.125rem; }
 
 .branding .logo h1 a { background-position: left center; background-repeat: no-repeat; -webkit-background-size: contain; background-size: contain; width: 100%; text-decoration: none; }
 
-.button { -webkit-appearance: none; background-color: #430ae0; border: none; color: #dd0a50; cursor: pointer; display: inline-block; margin-top: 1em; padding: 0.5em 1em; text-decoration: none; -webkit-transition: all 0.25s ease-out; transition: all 0.25s ease-out; }
+.button { -webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: #430ae0; border: none; color: #dd0a50; cursor: pointer; display: inline-block; margin-top: 1em; padding: 0.5em 1em; text-decoration: none; -webkit-transition: all 0.25s ease-out; transition: all 0.25s ease-out; }
 
 .button:hover { background-color: #dd0a50; color: #430ae0; }
 
 .button-secondary { background-color: #dd0a50; color: #fff; padding: 0.5em 1em; text-decoration: none; }
+
+#back-to-top { background-color: #dd0a50; -webkit-border-radius: 0; border-radius: 0; -webkit-box-shadow: 0 0 20px rgba(34, 34, 34, 0.2); box-shadow: 0 0 20px rgba(34, 34, 34, 0.2); color: #fff; cursor: pointer; font-size: 90%; padding: 0.7em 1.2em; opacity: 0; position: fixed; bottom: 2em; right: 2em; z-index: 99; -webkit-transition: all 0.25s ease-out; transition: all 0.25s ease-out; }
+
+#back-to-top .fa { margin-right: 0; padding: 0; -webkit-animation: back-to-top-arrow 1.5s ease-out infinite forwards; animation: back-to-top-arrow 1.5s ease-out infinite forwards; }
+
+#back-to-top:hover { background-color: #bb0844; -webkit-box-shadow: 0 10px 40px rgba(34, 34, 34, 0.1); box-shadow: 0 10px 40px rgba(34, 34, 34, 0.1); -webkit-transform: scale(1.05); transform: scale(1.05); }
+
+#back-to-top.show { opacity: 1; }
+
+@-webkit-keyframes back-to-top-arrow { 0% { opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); }
+  80% { opacity: 1; }
+  100% { opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); } }
+
+@keyframes back-to-top-arrow { 0% { opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); }
+  80% { opacity: 1; }
+  100% { opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px); } }
 
 .gallery-item { margin-bottom: 1em; }
 
