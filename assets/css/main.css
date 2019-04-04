@@ -735,8 +735,6 @@ table th, table td { padding: 0.5em; }
 
 table td:nth-of-type(even) { background-color: #e9e9e9; }
 
-.site-wrap { overflow: hidden; }
-
 .no-js { display: none; }
 
 /* --- Forms --- */
