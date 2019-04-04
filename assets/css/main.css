@@ -693,7 +693,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .bg-error { background-color: #d1452d; }
 
 /* --- Base --- */
-html { font-size: 16px; margin: 0; padding: 0; }
+html { background-color: #fff; font-size: 16px; margin: 0; padding: 0; }
 
 @media screen and (min-width: 1200px) { html { font-size: 1.125rem; } }
 

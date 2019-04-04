@@ -1,6 +1,7 @@
 /* --- Base --- */
 
 html {
+	background-color: $body-background-color;
 	font-size: $global-font-size;
 	margin: 0;
 	padding: 0;
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-	color: $body-font-color;
+	color: $body-color;
 	font-family: $body-font-family;
 	font-weight: $body-font-weight;
 	line-height: $body-line-height;

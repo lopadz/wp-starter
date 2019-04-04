@@ -25,11 +25,12 @@ $global-font-light:     300;
 $global-font-bold:      700;
 $global-max-width:      1200px;
 
-$body-font-color:     $black;
-$body-font-family:    'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$body-font-weight:    $global-font-weight;
-$body-letter-spacing: 0;
-$body-line-height:    1.5;
+$body-background-color: $white;
+$body-color:            $black;
+$body-font-family:      'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$body-font-weight:      $global-font-weight;
+$body-letter-spacing:   0;
+$body-line-height:      1.5;
 
 $heading-font-color:     $color-primary;
 $heading-font-family:    'PT Serif', serif;
