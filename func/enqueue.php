@@ -12,6 +12,11 @@ function wps_site_scripts() {
 	// === JS ===
 	// ==========
 
+	// Stupid IE users
+	if ( preg_match( '/MSIE\s(?P<v>\d+)/i', $_SERVER['HTTP_USER_AGENT'], $browser_version ) && $browser_version['v'] <= 9 ) {
+		wp_enqueue_script( 'ie-js', 'https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js', array(), '1.0', false );
+	}
+
 	// Custom jQuery
 	wp_deregister_script( 'jquery' );
 	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', array(), '3.3.1', true );
