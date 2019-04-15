@@ -54,7 +54,8 @@ function wps_start() {
 	$GLOBALS['content_width'] = apply_filters( 'wps_theme_support', 1500 );
 
 	// Limit uploading images too darn big!
-	add_filter( 'wp_handle_upload_prefilter', 'wps_max_image_size' );
+	// Enable this after site has launched.
+	// add_filter( 'wp_handle_upload_prefilter', 'wps_max_image_size' );
 
 	// =======================
 	// WP HEAD CLEANUP & FIXES
