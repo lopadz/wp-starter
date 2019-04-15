@@ -16,23 +16,29 @@ in their own file.
 // (http://codex.wordpress.org/Function_Reference/register_post_type)
 function custom_post_example() {
 	// creating (registering) the custom type
-	register_post_type( 'custom_type',
+	register_post_type(
+		'custom_type',
 		// let's now add all the options for this post type
 		array(
-			'labels'           => array(
-				'name'               => __( 'Custom Post Type', 'wps' ),               // This is the Title of the Group
-				'singular_name'      => __( 'Custom Post Type', 'wps' ),               // This is the individual type
-				'all_items'          => __( 'All Custom Post Types', 'wps' ),          // the all items menu item
-				'add_new'            => __( 'Add New', 'wps' ),                        // The add new menu item
-				'add_new_item'       => __( 'Add New Custom Type', 'wps' ),            // Add New Display Title
-				'edit'               => __( 'Edit', 'wps' ),                           // Edit Dialog
-				'edit_item'          => __( 'Edit Post Types', 'wps' ),                // Edit Display Title
-				'new_item'           => __( 'New Post Type', 'wps' ),                  // New Display Title
-				'view_item'          => __( 'View Post Type', 'wps' ),                 // View Display Title
-				'search_items'       => __( 'Search Post Type', 'wps' ),               // Search Custom Type Title
-				'not_found'          => __( 'Nothing found in the Database.', 'wps' ), // This displays if there are no entries yet
-				'not_found_in_trash' => __( 'Nothing found in Trash', 'wps' ),         // This displays if there is nothing in the trash
-				'parent_item_colon'  => '',
+			'labels'              => array(
+				'name'                  => __( 'Custom Post Type', 'wps' ),               // This is the Title of the Group
+				'singular_name'         => __( 'Custom Post Type', 'wps' ),               // This is the individual type
+				'all_items'             => __( 'All Custom Post Types', 'wps' ),          // the all items menu item
+				'add_new'               => __( 'Add New', 'wps' ),                        // The add new menu item
+				'add_new_item'          => __( 'Add New Custom Type', 'wps' ),            // Add New Display Title
+				'edit'                  => __( 'Edit', 'wps' ),                           // Edit Dialog
+				'edit_item'             => __( 'Edit Custom Post Type', 'wps' ),          // Edit Display Title
+				'new_item'              => __( 'New Custom Post Type', 'wps' ),           // New Display Title
+				'view_item'             => __( 'View Custom Post Type', 'wps' ),          // View Display Title
+				'search_items'          => __( 'Search Custom Post Types', 'wps' ),       // Search Custom Type Title
+				'not_found'             => __( 'Nothing found in the Database.', 'wps' ), // This displays if there are no entries yet
+				'not_found_in_trash'    => __( 'Nothing found in Trash', 'wps' ),         // This displays if there is nothing in the trash
+				'parent_item_colon'     => '',
+				// Featured Image Labels
+				'featured_image'        => __( 'Featured Image', 'wps' ),
+				'set_featured_image'    => __( 'Set Featured Image', 'wps' ),
+				'remove_featured_image' => __( 'Remove Image', 'wps' ),
+				'use_featured_image'    => __( 'Use Image', 'wps' ),
 			),
 			'description'         => __( 'This is the example custom post type', 'wps' ), // Custom Type Description
 			'public'              => true,
@@ -81,10 +87,11 @@ http://codex.wordpress.org/Function_Reference/register_taxonomy
 */
 
 // now let's add custom CATEGORIES (these act like categories)
-register_taxonomy( 'custom_cat',
-	array( 'custom_type' ), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
+register_taxonomy(
+	'custom_cat',
+	array( 'custom_type' ), // if you change the name of register_post_type( 'custom_type', then you have to change this
 	array(
-		'hierarchical'      => true,     /* if this is true, it acts like categories */
+		'hierarchical'      => true, // if this is true, it acts like categories
 		'labels'            => array(
 			'name'              => __( 'Custom Categories', 'wps' ),        // name of the custom taxonomy
 			'singular_name'     => __( 'Custom Category', 'wps' ),          // single taxonomy name
@@ -105,20 +112,21 @@ register_taxonomy( 'custom_cat',
 );
 
 // now let's add custom TAGS (these act like categories)
-register_taxonomy( 'custom_tag',
-	array( 'custom_type' ), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
+register_taxonomy(
+	'custom_tag',
+	array( 'custom_type' ), // if you change the name of register_post_type( 'custom_type', then you have to change this
 	array(
-		'hierarchical'      => false,   /* if this is false, it acts like tags */
+		'hierarchical'      => false,   // if this is false, it acts like tags
 		'labels'            => array(
-			'name'              => __( 'Custom Tags', 'wps' ),        // name of the custom taxonomy
-			'singular_name'     => __( 'Custom Tag', 'wps' ),         // single taxonomy name
-			'search_items'      => __( 'Search Custom Tags', 'wps' ), // search title for taxomony
-			'all_items'         => __( 'All Custom Tags', 'wps' ),    // all title for taxonomies
-			'parent_item'       => __( 'Parent Custom Tag', 'wps' ),  // parent title for taxonomy
-			'parent_item_colon' => __( 'Parent Custom Tag:', 'wps' ), // parent taxonomy title
-			'edit_item'         => __( 'Edit Custom Tag', 'wps' ),    // edit custom taxonomy title
-			'update_item'       => __( 'Update Custom Tag', 'wps' ),  // update title for taxonomy
-			'add_new_item'      => __( 'Add New Custom Tag', 'wps' ), // add new title for taxonomy
+			'name'              => __( 'Custom Tags', 'wps' ),         // name of the custom taxonomy
+			'singular_name'     => __( 'Custom Tag', 'wps' ),          // single taxonomy name
+			'search_items'      => __( 'Search Custom Tags', 'wps' ),  // search title for taxomony
+			'all_items'         => __( 'All Custom Tags', 'wps' ),     // all title for taxonomies
+			'parent_item'       => __( 'Parent Custom Tag', 'wps' ),   // parent title for taxonomy
+			'parent_item_colon' => __( 'Parent Custom Tag:', 'wps' ),  // parent taxonomy title
+			'edit_item'         => __( 'Edit Custom Tag', 'wps' ),     // edit custom taxonomy title
+			'update_item'       => __( 'Update Custom Tag', 'wps' ),   // update title for taxonomy
+			'add_new_item'      => __( 'Add New Custom Tag', 'wps' ),  // add new title for taxonomy
 			'new_item_name'     => __( 'New Custom Tag Name', 'wps' ), // name title for taxonomy
 		),
 		'show_admin_column' => true,
