@@ -33,7 +33,7 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 }
 
 // Enable ACF Menu
-if ( false === get_field( 'theme-enable_acf', 'options' ) ) {
+if ( class_exists( 'acf' ) && false === get_field( 'theme-enable_acf', 'options' ) ) {
 	add_filter( 'acf/settings/show_admin', '__return_false' );
 }
 
