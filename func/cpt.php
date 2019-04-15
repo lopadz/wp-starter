@@ -54,13 +54,14 @@ function custom_post_example() {
 			),
 			'has_archive'         => 'custom_type', // you can rename the slug here
 			'capability_type'     => 'post',
-			'hierarchical'        => false,
+			'hierarchical'        => false, // If TRUE, the posts act as pages/subpages
 			// the next one is important, it tells what's enabled in the post editor
 			'supports'            => array(
 				'title',
 				'editor',
 				'author',
 				'thumbnail',
+				'page-attributes',
 				'excerpt',
 				'trackbacks',
 				'custom-fields',
