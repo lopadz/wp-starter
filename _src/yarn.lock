@@ -36,22 +36,10 @@ headroom.js@^0.9.4:
   resolved "https://registry.yarnpkg.com/headroom.js/-/headroom.js-0.9.4.tgz#0c4e6b4563bb69df55aecdefaba3227566f2df5a"
   integrity sha1-DE5rRWO7ad9Vrs3vq6MidWby31o=
 
-izimodal@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/izimodal/-/izimodal-1.5.1.tgz#a49145030d8d9edfc60dfc35ae1758e4cf8502f1"
-  integrity sha512-DqqGUd741tAqJnWZMQRgixlgtSB6tb/HhfddmlsFWE5P7sckF2SmKVyyttpAdBdN5LUzQiF/R/+IjJw0TS5oTA==
-  dependencies:
-    jquery "~2"
-
 jquery@>=1.8.3:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
   integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
-
-jquery@~2:
-  version "2.2.4"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
-  integrity sha1-LInWiJterFIqfuoywUUhVZxsvwI=
 
 lodash.debounce@^4.0.6:
   version "4.0.8"
