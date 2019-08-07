@@ -22,8 +22,7 @@
 .login h1 a {
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: contain;
-          background-size: contain;
+  background-size: contain;
   display: block;
   width: 100%;
 }
@@ -31,8 +30,7 @@
 .wp-core-ui .button-primary {
   background: #430ae0;
   border-color: #3c09c8;
-  -webkit-box-shadow: 0 1px 0 #3408af;
-          box-shadow: 0 1px 0 #3408af;
+  box-shadow: 0 1px 0 #3408af;
   color: #fff;
   text-decoration: none;
   text-shadow: 0 -1px 1px rgba(34, 34, 34, 0.5);
@@ -41,6 +39,5 @@
 .wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus {
   background: #3f09d1;
   border-color: #3908be;
-  -webkit-box-shadow: 0 1px 0 #3408af;
-          box-shadow: 0 1px 0 #3408af;
+  box-shadow: 0 1px 0 #3408af;
 }

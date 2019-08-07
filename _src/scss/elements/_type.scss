@@ -27,14 +27,14 @@ h6 { font-size: $font-size-6; }
 	h6 { font-size: $font-size-6 * 1.125; }
 }
 
-@include breakpoint( large ) {
-	h1 { font-size: $font-size-1 * 1.25; }
-	h2 { font-size: $font-size-2 * 1.25; }
-	h3 { font-size: $font-size-3 * 1.25; }
-	h4 { font-size: $font-size-4 * 1.25; }
-	h5 { font-size: $font-size-5 * 1.25; }
-	h6 { font-size: $font-size-6 * 1.25; }
-}
+// @include breakpoint( large ) {
+// 	h1 { font-size: $font-size-1 * 1.25; }
+// 	h2 { font-size: $font-size-2 * 1.25; }
+// 	h3 { font-size: $font-size-3 * 1.25; }
+// 	h4 { font-size: $font-size-4 * 1.25; }
+// 	h5 { font-size: $font-size-5 * 1.25; }
+// 	h6 { font-size: $font-size-6 * 1.25; }
+// }
 
 
 // Font Styles
@@ -68,7 +68,6 @@ h6 { font-size: $font-size-6; }
 	&s-5         { font-size: $font-size-5; }
 	&s-6         { font-size: $font-size-6; }
 	&s-7         { font-size: $font-size-7; }
-	&s-8         { font-size: $font-size-7; }
 
 	@include breakpoint( medium ) {
 		&headline    { font-size: $font-size-headline * 1.125; }
