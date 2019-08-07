@@ -6,7 +6,7 @@ function wps_acf_get_modules(
 	string $module_prefix
 ) {
 
-	$modules_dir = get_template_directory() . '/parts/modules';
+	$modules_dir = get_template_directory() . '/acf/modules';
 
 	if ( have_rows( $layout_name ) ) {
 

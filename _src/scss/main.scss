@@ -30,32 +30,32 @@
 
 
 /* ============================================== 
-	MODULES 
+	ELEMENTS 
 	CSS Framework - Change/use as necessary
 */
-@import './modules/backgrounds';
-@import './modules/base';
-@import './modules/forms';
-@import './modules/fx';
-@import './modules/grid';
-@import './modules/margin';
-@import './modules/menus';
-@import './modules/padding';
-@import './modules/position';
-@import './modules/type';
-@import './modules/z-index';
+@import './elements/backgrounds';
+@import './elements/base';
+@import './elements/forms';
+@import './elements/fx';
+@import './elements/grid';
+@import './elements/margin';
+@import './elements/menus';
+@import './elements/padding';
+@import './elements/position';
+@import './elements/type';
+@import './elements/z-index';
 
 
 /* ============================================== 
 	THEME 
 */
-// Components or Modules
-@import './theme/components/branding';
-@import './theme/components/buttons';
-@import './theme/components/gallery';
-@import './theme/components/navigation';
-@import './theme/components/woo';
-@import './theme/components/vendor/owl-carousel-theme';
+// Modules
+@import './theme/modules/branding';
+@import './theme/modules/buttons';
+@import './theme/modules/gallery';
+@import './theme/modules/navigation';
+@import './theme/modules/woo';
+@import './theme/modules/vendor/owl-carousel-theme';
 
 
 // Partials
