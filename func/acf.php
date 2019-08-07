@@ -1,7 +1,7 @@
 <?php
 
-// Check if ACF is installed and active
-if ( class_exists( 'acf' ) && true === is_plugin_active( 'advanced-custom-fields-pro/acf.php' ) ) {
+// Check if ACF Pro is installed
+if ( class_exists( 'acf_pro' ) ) {
 
 	// Admin Settings
 	require get_template_directory() . '/func/acf/admin.php';
