@@ -20,21 +20,13 @@ else :
 
 			the_post();
 
-			// Load corresponding layout
+			// Load specific layout
 			if ( is_front_page() ) :
 				get_template_part( 'pages/home' );
 
-				elseif ( is_cart() ) :
-					get_template_part( 'global/woo/cart' );
-
-				elseif ( is_checkout() ) :
-					get_template_part( 'global/woo/checkout' );
-
-				elseif ( is_account_page() ) :
-					get_template_part( 'global/woo/account' );
-
-				else :
-					get_template_part( 'global/page' );
+			else :
+				// Load global layout
+				get_template_part( 'global/page' );
 
 			endif;
 

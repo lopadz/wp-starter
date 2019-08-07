@@ -44,9 +44,9 @@ izimodal@^1.5.1:
     jquery "~2"
 
 jquery@>=1.8.3:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
-  integrity sha512-Ubldcmxp5np52/ENotGxlLe6aGMvmF4R8S6tZjsP6Knsaxd/xp3Zrh50cG93lR6nPXyUFwzN3ZSOQI0wRJNdGg==
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
+  integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
 
 jquery@~2:
   version "2.2.4"
@@ -64,9 +64,9 @@ lodash.throttle@^4.0.1:
   integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
 
 node-normalize-scss@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/node-normalize-scss/-/node-normalize-scss-8.0.0.tgz#b5be9c851cd9861266524a43a5bc83854506a7d6"
-  integrity sha512-eQMVmvs2Hj33v3m/jstZOBGOr0lO+Rr3tamGdZxBtiUbJ/WXywsLz/LhVQDSugxG4TEnfYyGxdfbRVKNxw+x7g==
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/node-normalize-scss/-/node-normalize-scss-8.0.1.tgz#006cd8da0fd7a4ca859d936ae7f6a6a6a00cf5d6"
+  integrity sha512-viPhFNDOuHAHxW8J0Yk4qfT4YWO7y21fpjQGRK9hM9jYKeQR2wdw3ughQnCW4roz5cCNSdJZccfRZOXj83PEcg==
 
 owl.carousel@^2.3.4:
   version "2.3.4"

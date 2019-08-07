@@ -28,7 +28,7 @@ h1 { font-size: 2em; margin: 0.67em 0; }
 
 /* Grouping content ========================================================================== */
 /** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
-hr { -webkit-box-sizing: content-box; box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
 
 /** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
 pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
@@ -83,7 +83,7 @@ button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focus
 fieldset { padding: 0.35em 0.75em 0.625em; }
 
 /** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
-legend { -webkit-box-sizing: border-box; box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+legend { box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
 
 /** Add the correct vertical alignment in Chrome, Firefox, and Opera. */
 progress { vertical-align: baseline; }
@@ -92,7 +92,7 @@ progress { vertical-align: baseline; }
 textarea { overflow: auto; }
 
 /** 1. Add the correct box sizing in IE 10. 2. Remove the padding in IE 10. */
-[type="checkbox"], [type="radio"] { -webkit-box-sizing: border-box; box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+[type="checkbox"], [type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
 
 /** Correct the cursor style of increment and decrement buttons in Chrome. */
 [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
@@ -674,7 +674,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 .owl-carousel .owl-video-playing .owl-video-tn, .owl-carousel .owl-video-playing .owl-video-play-icon { display: none; }
 
-.owl-carousel .owl-video-tn { opacity: 0; height: 100%; background-position: center center; background-repeat: no-repeat; -webkit-background-size: contain; background-size: contain; -webkit-transition: opacity 400ms ease; transition: opacity 400ms ease; }
+.owl-carousel .owl-video-tn { opacity: 0; height: 100%; background-position: center center; background-repeat: no-repeat; background-size: contain; -webkit-transition: opacity 400ms ease; transition: opacity 400ms ease; }
 
 .owl-carousel .owl-video-frame { position: relative; z-index: 1; height: 100%; width: 100%; }
 
@@ -701,7 +701,7 @@ body { color: #222; font-family: "Lato", "Helvetica Neue", Helvetica, Arial, san
 
 @media screen and (min-width: 1200px) { body { line-height: 1.7; } }
 
-* { -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+* { box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 ::-moz-selection { background-color: #430ae0; color: #fff; }
 
@@ -1674,7 +1674,7 @@ h6 { font-size: 1.125rem; }
 /* ==============================================  THEME  */
 .branding .logo h1 { overflow: hidden; }
 
-.branding .logo h1 a { background-position: left center; background-repeat: no-repeat; -webkit-background-size: contain; background-size: contain; width: 100%; text-decoration: none; }
+.branding .logo h1 a { background-position: left center; background-repeat: no-repeat; background-size: contain; width: 100%; text-decoration: none; }
 
 .button { -webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: #430ae0; border: none; color: #dd0a50; cursor: pointer; display: inline-block; margin-top: 1em; padding: 0.5em 1em; text-decoration: none; -webkit-transition: all 0.25s ease-out; transition: all 0.25s ease-out; }
 
@@ -1682,11 +1682,11 @@ h6 { font-size: 1.125rem; }
 
 .button-secondary { background-color: #dd0a50; color: #fff; padding: 0.5em 1em; text-decoration: none; }
 
-#back-to-top { background-color: #dd0a50; -webkit-border-radius: 0; border-radius: 0; -webkit-box-shadow: 0 0 20px rgba(34, 34, 34, 0.2); box-shadow: 0 0 20px rgba(34, 34, 34, 0.2); color: #fff; cursor: pointer; font-size: 90%; padding: 0.7em 1.2em; opacity: 0; position: fixed; bottom: 2em; right: 2em; z-index: 99; -webkit-transition: all 0.25s ease-out; transition: all 0.25s ease-out; }
+#back-to-top { background-color: #dd0a50; border-radius: 0; box-shadow: 0 0 20px rgba(34, 34, 34, 0.2); color: #fff; cursor: pointer; font-size: 90%; padding: 0.7em 1.2em; opacity: 0; position: fixed; bottom: 2em; right: 2em; z-index: 99; -webkit-transition: all 0.25s ease-out; transition: all 0.25s ease-out; }
 
 #back-to-top .fa { margin-right: 0; padding: 0; -webkit-animation: back-to-top-arrow 1.5s ease-out infinite forwards; animation: back-to-top-arrow 1.5s ease-out infinite forwards; }
 
-#back-to-top:hover { background-color: #bb0844; -webkit-box-shadow: 0 10px 40px rgba(34, 34, 34, 0.1); box-shadow: 0 10px 40px rgba(34, 34, 34, 0.1); -webkit-transform: scale(1.05); transform: scale(1.05); }
+#back-to-top:hover { background-color: #bb0844; box-shadow: 0 10px 40px rgba(34, 34, 34, 0.1); -webkit-transform: scale(1.05); transform: scale(1.05); }
 
 #back-to-top.show { opacity: 1; }
 
@@ -1762,7 +1762,7 @@ h6 { font-size: 1.125rem; }
 
 .owl-theme .owl-nav { margin-top: 10px; text-align: center; -webkit-tap-highlight-color: transparent; }
 
-.owl-theme .owl-nav [class*='owl-'] { background: #D6D6D6; -webkit-border-radius: 3px; border-radius: 3px; color: #FFF; cursor: pointer; display: inline-block; font-size: 14px; margin: 5px; padding: 4px 7px; }
+.owl-theme .owl-nav [class*='owl-'] { background: #D6D6D6; border-radius: 3px; color: #FFF; cursor: pointer; display: inline-block; font-size: 14px; margin: 5px; padding: 4px 7px; }
 
 .owl-theme .owl-nav [class*='owl-']:hover { background: #869791; color: #FFF; text-decoration: none; }
 
@@ -1774,7 +1774,7 @@ h6 { font-size: 1.125rem; }
 
 .owl-theme .owl-dots .owl-dot { display: inline-block; zoom: 1; *display: inline; }
 
-.owl-theme .owl-dots .owl-dot span { -webkit-backface-visibility: visible; backface-visibility: visible; background: #D6D6D6; -webkit-border-radius: 30px; border-radius: 30px; display: block; height: 10px; margin: 5px 7px; -webkit-transition: opacity 200ms ease; transition: opacity 200ms ease; width: 10px; }
+.owl-theme .owl-dots .owl-dot span { -webkit-backface-visibility: visible; backface-visibility: visible; background: #D6D6D6; border-radius: 30px; display: block; height: 10px; margin: 5px 7px; -webkit-transition: opacity 200ms ease; transition: opacity 200ms ease; width: 10px; }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span { background: #869791; }
 

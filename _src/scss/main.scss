@@ -49,7 +49,7 @@
 /* ============================================== 
 	THEME 
 */
-// Components
+// Components or Modules
 @import './theme/components/branding';
 @import './theme/components/buttons';
 @import './theme/components/gallery';
@@ -59,9 +59,9 @@
 
 
 // Partials
-@import './theme/partials/header';
-@import './theme/partials/footer';
-@import './theme/partials/sidebar';
+@import './theme/parts/header';
+@import './theme/parts/footer';
+@import './theme/parts/sidebar';
 
 // Global
 @import './theme/global/404';
