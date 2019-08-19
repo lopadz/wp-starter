@@ -18,4 +18,4 @@ function wps_login_title() {
 // Calling it only on the login page
 add_action( 'login_enqueue_scripts', 'wps_login_css', 10 );
 add_filter( 'login_headerurl', 'wps_login_url' );
-add_filter( 'login_headertitle', 'wps_login_title' );
+add_filter( 'login_headertext', 'wps_login_title' );
