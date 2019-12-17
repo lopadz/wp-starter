@@ -1,5 +1,7 @@
 # WP Starter
-Yet another WordPress theme to help you get started building custom sites. **[Now in version 2!](https://github.com/lopadz/wp-starter/releases)**
+Yet another WordPress theme to help you build custom sites. **[Now on version 2!](https://github.com/lopadz/wp-starter/releases)**
+
+![WP Starter new screenshot!](https://raw.githubusercontent.com/lopadz/wp-starter/master/screenshot.png)
 
 ## New Changes & Updates
 - **Re-built** and integrated with [Bootstrap 4](https://getbootstrap.com/)
