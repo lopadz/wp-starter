@@ -29,33 +29,33 @@ if ( ! empty( $acf_data ) ) :
 		'column_class'       => $module_prefix . 'column_class',
 	);
 
-	$enable_top_banner = $data[ $module['enable'] ];
+	$enable_top_banner = $acf_data[ $module['enable'] ];
 
 	if ( true === $enable_top_banner ) :
 
 		// Background Tab
-		$bg_color        = $data[ $module['bg_color'] ] ?: '#ffffff';
-		$bg_image_id     = $data[ $module['bg_img'] ] ?: null;
+		$bg_color        = $acf_data[ $module['bg_color'] ] ?: '#ffffff';
+		$bg_image_id     = $acf_data[ $module['bg_img'] ] ?: null;
 		$bg_image        = ! empty( $bg_image_id ) ? wp_get_attachment_image( $bg_image_id, 'full', false, array( 'class' => 'bg-image' ) ) : null;
 		$bg_image        = null === $bg_image ? null : $bg_image;
-		$overlay_color   = $data[ $module['overlay_color'] ] ?: '#000';
-		$overlay_opacity = $data[ $module['overlay_opacity'] ] ?: '0';
+		$overlay_color   = $acf_data[ $module['overlay_color'] ] ?: '#000';
+		$overlay_opacity = $acf_data[ $module['overlay_opacity'] ] ?: '0';
 
 		// Content Tab
-		$content_type = $data[ $module['content_type'] ];
+		$content_type = $acf_data[ $module['content_type'] ];
 
-		$content_text_color  = $data[ $module['content_txt_color'] ] ?: '#fff';
-		$content_text_shadow = true === $data[ $module['content_txt_shadow'] ] ? ' text-shadow' : null;
+		$content_text_color  = $acf_data[ $module['content_txt_color'] ] ?: '#fff';
+		$content_text_shadow = true === $acf_data[ $module['content_txt_shadow'] ] ? ' text-shadow' : null;
 
-		$content_title   = $data[ $module['content_title'] ] ?: null;
-		$content_tagline = $data[ $module['content_tagline'] ] ?: null;
-		$content_custom  = $data[ $module['content_custom'] ] ?: null;
+		$content_title   = $acf_data[ $module['content_title'] ] ?: null;
+		$content_tagline = $acf_data[ $module['content_tagline'] ] ?: null;
+		$content_custom  = $acf_data[ $module['content_custom'] ] ?: null;
 
 		// Advanced Tab
-		$section_class   = ! empty( $data[ $module['section_class'] ] ) ? 'jumbotron background ' . $data[ $module['section_class'] ] : null;
-		$container_class = ! empty( $data[ $module['container_class'] ] ) ? 'container ' . $data[ $module['container_class'] ] : 'container';
-		$row_class       = ! empty( $data[ $module['row_class'] ] ) ? 'row ' . $data[ $module['row_class'] ] : 'row';
-		$column_class    = ! empty( $data[ $module['column_class'] ] ) ? 'col ' . $data[ $module['column_class'] ] . $content_text_shadow : 'col' . $content_text_shadow;
+		$section_class   = ! empty( $acf_data[ $module['section_class'] ] ) ? 'jumbotron background ' . $acf_data[ $module['section_class'] ] : null;
+		$container_class = ! empty( $acf_data[ $module['container_class'] ] ) ? 'container ' . $acf_data[ $module['container_class'] ] : 'container';
+		$row_class       = ! empty( $acf_data[ $module['row_class'] ] ) ? 'row ' . $acf_data[ $module['row_class'] ] : 'row';
+		$column_class    = ! empty( $acf_data[ $module['column_class'] ] ) ? 'col ' . $acf_data[ $module['column_class'] ] . $content_text_shadow : 'col' . $content_text_shadow;
 
 		// CSS
 		$css_bg_color        = 'background-color: ' . $bg_color . ';';
@@ -97,10 +97,6 @@ if ( ! empty( $acf_data ) ) :
 							echo $content_custom;
 						endif;
 						?>
-
-						<!-- <h1 class="display-4">The Finest
-							<span class="d-block h2">Smooth Fiberglass, Textured Fiberglass & Steel Entry Doors</span>
-						</h1> -->
 
 					</div>
 

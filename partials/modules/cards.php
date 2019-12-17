@@ -64,7 +64,7 @@ if ( ! empty( $section_counter ) ) :
 	$card_type            = get_sub_field( $module['card']['type'] );
 	$card_header_enable   = get_sub_field( $module['card']['header_enable'] );
 	$card_footer_enable   = get_sub_field( $module['card']['footer_enable'] );
-	$card_img_placeholder = '<img class="img-fluid" src="' . wps_assets_uri() . '/img/placeholder-1.png" alt="Image Placeholder">';
+	$card_img_placeholder = '<img class="img-fluid" src="' . wps_get_assets_uri() . '/img/placeholder-1.png" alt="Image Placeholder">';
 
 	if ( have_rows( $cards ) ) :
 

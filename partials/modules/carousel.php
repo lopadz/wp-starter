@@ -86,7 +86,7 @@ if ( ! empty( $section_counter ) ) :
 						while ( have_rows( $module['cards'] ) ) {
 							the_row();
 
-							$card_img_placeholder = '<img class="card-img-top" src="' . wps_assets_uri() . '/img/placeholder-2.png" alt="Image Placeholder">';
+							$card_img_placeholder = '<img class="card-img-top" src="' . wps_get_assets_uri() . '/img/placeholder-2.png" alt="Image Placeholder">';
 							// ACF Data
 							$card_class  = get_sub_field( $module['card_class'] ) ? 'card ' . get_sub_field( $module['card_class'] ) : 'card';
 							$card_img_id = get_sub_field( $module['card_img'] );
