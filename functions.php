@@ -1,42 +1,58 @@
 <?php
 
 // Prevent direct access through URL
-if ( ! defined( 'ABSPATH' ) ) {
+if ( ! defined( 'ABSPATH' ) ) :
 	exit;
-}
 
-// Fire up engines!
-require get_template_directory() . '/func/start.php';
+else :
 
-// Custom classes added to body_class
-require get_template_directory() . '/func/body-class.php';
+	/**
+	 * Theme Environment
+	 * @var = live, stage, dev
+	*/
+	$theme_environment = 'dev';
+	global $theme_environment;
 
-// Register scripts and stylesheets
-require get_template_directory() . '/func/enqueue.php';
+	// Functions directory
+	$functions_directory = get_template_directory() . '/functions/';
 
-// Register custom menus and menu walkers
-require get_template_directory() . '/func/menus.php';
+	/** Functions' filenames to load.
+	 * NOTES:
+	 * - No .php extension is needed
+	 * - Order is important
+	 * - Comment out if not needed
+	*/
+	$function_files = [
+		'utilities',     // Theme Utilities
+		'templating',    // Get files, layouts, and templates
+		'start',         // Fire up engines!
+		'body-class',    // Custom classes added to body_class
+		'enqueue',       // Register scripts and stylesheets
+		'menus',         // Register custom menus and menu walkers
+		'widgets',       // Register widget areas
+		'cpt',           // Register custom post types and taxonomies
+		'acf',           // Register ACF functions
+		'gravity-forms', // Gravity Forms functions
+		'woo',           // Woo functions
+		'login',         // Customize the WordPress login menu
+		'admin',         // Customize the WordPress admin area
+		'shortcodes',    // Register shortcodes
+		// 'tests',      // Run tests (Uncomment if needed)
+	];
 
-// Register widget areas
-require get_template_directory() . '/func/widgets.php';
+	// Loop thru each filename in array
+	foreach ( $function_files as $function_file ) {
 
-// Use this as a template for custom post types
-require get_template_directory() . '/func/cpt.php';
+		// Function path
+		$function = $functions_directory . $function_file . '.php';
 
-// Register ACF Options Pages
-require get_template_directory() . '/func/acf.php';
+		// Check if file exists
+		if ( file_exists( $function ) ) {
 
-// Add pagination links with Foundation's styling
-require get_template_directory() . '/func/pagination.php';
+			// Load the function file
+			require $function;
+		}
 
-// Customize the WordPress login menu
-require get_template_directory() . '/func/login.php';
+	}
 
-// Customize the WordPress admin
-require get_template_directory() . '/func/admin.php';
-
-// Enable Theme Support for Woocommerce & custom functions/hooks
-// require get_template_directory() . '/func/woo.php';
-
-// Load to run tests
-// require get_template_directory() . '/func/tests.php';
+endif;

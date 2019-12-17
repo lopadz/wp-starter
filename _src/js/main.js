@@ -1,6 +1,6 @@
 // @codekit-prepend quiet "vendor/jquery.matchHeight.js";
 // @codekit-prepend quiet "../node_modules/headroom.js/dist/headroom.min.js";
-// @codekit-prepend quiet "../node_modules/aos/dist/aos.js";
+// codekit-prepend quiet "../node_modules/aos/dist/aos.js";
 
 
 var header = document.querySelector("#sticky");
@@ -17,13 +17,6 @@ var headroom = new Headroom(header, {
 	}
 });
 headroom.init();
-
-
-AOS.init({
-	easing: 'ease-out-back',
-	duration: 1000
-});
-
 
 jQuery(document).ready( function($) {
 

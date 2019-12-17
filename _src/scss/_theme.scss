@@ -1,0 +1,12 @@
+body {
+	// Better-looking fonts
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// Pushes footer to always be in bottom
+#site-wrap {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}

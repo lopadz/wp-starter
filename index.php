@@ -2,7 +2,7 @@
 
 /*
 	This file loads the corresponding layout for any post type.
-	To avoid cluttering your theme, create your custom layouts in the global dir and load them here.
+	To avoid cluttering your theme, create your custom views in the layouts dir and load them here.
 	For more on Template Hierarchy: https://developer.wordpress.org/themes/basics/template-hierarchy/
 */
 
@@ -11,29 +11,29 @@ if ( ! defined( 'ABSPATH' ) ) :
 	exit;
 
 else :
-	get_header();
 
-	// Load corresponding layout
-	if ( is_404() ) :
-		get_template_part( 'global/404' );
+	// Load corresponding template
+	if ( is_page() ) :
+		wps_get_file( 'layouts/page' );
+
+	elseif ( is_singular( 'single-cpt' ) ) :
+		wps_get_file( 'layouts/single/cpt' );
 
 	elseif ( is_single() ) :
-		get_template_part( 'global/single' );
+		wps_get_file( 'layouts/single' );
 
 	elseif ( is_archive() ) :
-		get_template_part( 'global/archive' );
-
-	elseif ( is_home() ) :
-		get_template_part( 'global/blog' );
+		wps_get_file( 'layouts/archive' );
 
 	elseif ( is_search() ) :
-		get_template_part( 'global/search' );
+		wps_get_file( 'layouts/search' );
+
+	elseif ( is_home() ) :
+		wps_get_file( 'layouts/blog' );
 
 	else :
-		get_template_part( 'global/index' );
+		wps_get_file( 'layouts/404' );
 
 	endif;
-
-	get_footer();
 
 endif;

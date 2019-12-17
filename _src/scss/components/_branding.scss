@@ -1,0 +1,22 @@
+.branding {
+
+	.logo {
+
+		h1 {
+			overflow: hidden;
+
+			a {
+			//    background-image: url('../img/svg/logo.svg');
+			   background-position: left center;
+			   background-repeat: no-repeat;
+			   background-size: contain;
+			//    display: inline-block;
+			   width: 100%;
+			//    text-indent: -9999px;
+			text-decoration: none;
+		   }
+	   }
+
+	}
+
+}

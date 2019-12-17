@@ -1,32 +1,39 @@
 # WP Starter
-A _very minimal_ WordPress theme to help you get started building custom sites.
+A starter WordPress theme to help you get started building custom sites. **[Now in version 2!](https://github.com/lopadz/wp-starter/releases)**
+
+## New Changes & Updates
+- **Re-built** and integrated with [Bootstrap 4](https://getbootstrap.com/)
+- New **file structure** that _really tries_ to separate logic from presentation (read below for brief explanation)
+- New **templating functions** to include/require instead of get_template_part()
+- New **integrations** with [WooCommerce](https://woocommerce.com/) and [Gravity Forms](https://www.gravityforms.com/)
+- New page/post **Layout Builder** powered by [ACF](https://www.advancedcustomfields.com/)
+
+## Recommended Dev Wokflow
+- Edit with [VS Code](https://code.visualstudio.com/)
+- Manage dependencies with [Yarn](https://yarnpkg.com/)
+- Compile with [Codekit](https://codekitapp.com/) or [Prepros](https://prepros.io/)
+- Develop locally with [Laravel Valet](https://laravel.com/docs/6.x/valet) (Mac Only)
 
 ## File Structure
-If you're not a big fan of the way WP template & theme files are organized, here's yet another way of doing it. The function **get_template_part()** is used extensively to load the correct template. However, you still have the option to add the files the normal way to override the theme. And to help you find your way around, here's a brief explanation of the structure:
+If you're not a fan of the [template hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/) in WP, give this theme a try! Using conditional logic and custom functions like **wps_get_file()** you can load any file you want plus a few more tricks (like passing data to the included file 😀).
 
-### **_src/**
-Includes the SCSS and JS files that will need to be compiled during development. Use Yarn to download the dependencies. Codekit is highly recommended.
+### Terminology
+If needed, you can still load templates the "normal way" to override the theme. But, if you're a rebel, here's a brief explanation of the terminology being used:
 
-#### _src/scss/modules/
-Using a kind of atomic design, these modules help with things like position, grid, and typography. It's very minimal, but extensible enough to fit your layout needs.
+- **Components** (SCSS): Basic repeatable presentation elements (_banners, cards, etc..._)
+  
+- **Modules** (PHP - ACF): Repeatable sections that contain components (_columns, carousel, top banner, etc..._)
 
-#### _src/scss/settings/
-Mixins and variables used throughout the modules and theme.
+- **Partials** (PHP): Repeatable blocks of content (_header, footer, hero module, etc..._) 
 
-#### _src/scss/theme/
-It follows the theme folders and files to better mantain the site's styles.
+- **Layouts** (PHP): Groups of partials and/or modules (_page, 404, archive, etc..._)
 
-### **func/**
-Loads all the different functions and hooks used throughout the theme.
+- **Templates** (PHP - WP): Same as WP to keep things consistent with backend. (_Homepage, Layout Builder, Sidebar Left, etc..._)
 
-### **global/**
-Loads default templates like 404, blog, default page, etc...
+## Credits
+Theme screenshot based on illustrations from [Undraw](https://undraw.co/).
 
-### **pages/**
-Create the custom templates for pages here. Make sure you load this new file in the page.php file. For an example, see how pages/home.php is loaded. You could create templates, but sometimes you just need the layout for a specific page.
+## Support & Feedback
+> ["Nobody's perfect."](https://youtu.be/t93u0qg5q_M) ~Hannah Montana
 
-### **partials/**
-Any files that load over and over throughout the site should be added here.
-
-### **templates/**
-Add your custom templates here. Samples are included.
+Ask questions, send feedback (or your fave The Office quote) to benlopez@blankdistrict.com!

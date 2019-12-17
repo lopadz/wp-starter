@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-aos@^2.3.3:
+aos@^2.3.4:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/aos/-/aos-2.3.4.tgz#eb1c29f5c1806a197cf6323080747547edd3db8e"
   integrity sha512-zh/ahtR2yME4I51z8IttIt4lC1Nw0ktsFtmeDzID1m9naJnWXhCoARaCgNOGXb5CLy3zm+wqmRAEgMYB5E2HUw==
@@ -11,35 +11,20 @@ aos@^2.3.3:
     lodash.debounce "^4.0.6"
     lodash.throttle "^4.0.1"
 
-blazy@^1.8.2:
-  version "1.8.2"
-  resolved "https://registry.yarnpkg.com/blazy/-/blazy-1.8.2.tgz#50dfd638baaf9003efd6eb3a836aca54184ab6da"
-  integrity sha1-UN/WOLqvkAPv1us6g2rKVBhKtto=
-
-bourbon-neat@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/bourbon-neat/-/bourbon-neat-3.0.1.tgz#09f0d6d3c90655a108a1abb6c4ae765f2863d8da"
-  integrity sha512-UatucoVtJQdBTHRR7niNO6qMZynqJ+vNTLVyO/FRYu2xDw/kbgyB4Owbc0eJVziapbX0JEYNEt6JyBdgupRHBA==
+bootstrap@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.4.1.tgz#8582960eea0c5cd2bede84d8b0baf3789c3e8b01"
+  integrity sha512-tbx5cHubwE6e2ZG7nqM3g/FZ5PQEDMWmMGNrCUBVRPHXTJaH7CBDdsLeu3eCh3B1tzAxTnAbtmrzvWEvT2NNEA==
 
 classlist-polyfill@^1.0.3:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz#935bc2dfd9458a876b279617514638bcaa964a2e"
   integrity sha1-k1vC39lFiodrJ5YXUUY4vKqWSi4=
 
-font-awesome-sass@^4.7.0:
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/font-awesome-sass/-/font-awesome-sass-4.7.0.tgz#4eda693e915009ce00b228e0964dc5eca9bc34e1"
-  integrity sha1-TtppPpFQCc4Asijglk3F7Km8NOE=
-
-headroom.js@^0.9.4:
-  version "0.9.4"
-  resolved "https://registry.yarnpkg.com/headroom.js/-/headroom.js-0.9.4.tgz#0c4e6b4563bb69df55aecdefaba3227566f2df5a"
-  integrity sha1-DE5rRWO7ad9Vrs3vq6MidWby31o=
-
-jquery@>=1.8.3:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
-  integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
+headroom.js@^0.10.3:
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/headroom.js/-/headroom.js-0.10.3.tgz#2fb37ce94bb2f43471070c854d68511ae07db6e7"
+  integrity sha512-gMLqEtViTt4GI2G2+XnqRr9OIxxrgKmywHuCY2XtjKnQc2UcdDKbocvkL7Ohi1K5v3sU7BZmzqbQakAjDG/WZQ==
 
 lodash.debounce@^4.0.6:
   version "4.0.8"
@@ -50,15 +35,3 @@ lodash.throttle@^4.0.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
   integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
-
-node-normalize-scss@^8.0.0:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/node-normalize-scss/-/node-normalize-scss-8.0.1.tgz#006cd8da0fd7a4ca859d936ae7f6a6a6a00cf5d6"
-  integrity sha512-viPhFNDOuHAHxW8J0Yk4qfT4YWO7y21fpjQGRK9hM9jYKeQR2wdw3ughQnCW4roz5cCNSdJZccfRZOXj83PEcg==
-
-owl.carousel@^2.3.4:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/owl.carousel/-/owl.carousel-2.3.4.tgz#6c53dc8d24304b790e4f27a1dc4a655e973ccdc9"
-  integrity sha512-JaDss9+feAvEW8KZppPSpllfposEzQiW+Ytt/Xm5t/3CTJ7YVmkh6RkWixoA2yXk2boIwedYxOvrrppIGzru9A==
-  dependencies:
-    jquery ">=1.8.3"

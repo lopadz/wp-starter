@@ -1,85 +1,72 @@
 /*!
 
-  Theme:WP Starter
+  Theme: WP Starter Theme
   Author: Ben Lopez
   Notes: 
 
 */
-@charset 'utf-8';
 
 /* ============================================== 
-	SETTINGS & TOOLS 
-	Vars, mixins, etc...
+	SETTINGS
+	Frmework, Mixins, Variables, etc...
 */
-@import './settings/vars';
-@import './settings/util';
+
+// Custom Mixins
+@import 'settings/mixins';
+
+// Boostrap
+@import 'settings/framework/bootstrap';
 
 
 /* ============================================== 
-	VENDOR
-	3rd-party libraries, etc...
+	MODULES
+	Node modules. Managed with Yarn.
 */
-// Bourbon Neat Grid
-@import '../node_modules/bourbon-neat/core/neat';
-// Normalize.css
-@import '../node_modules/node-normalize-scss/normalize';
+
 // AOS (Animated On Scroll)
 @import '../node_modules/aos/src/sass/aos';
-// Owl Carousel 2
-@import '../node_modules/owl.carousel/src/scss/owl.carousel.scss';
 
 
 /* ============================================== 
-	ELEMENTS 
-	CSS Framework - Change/use as necessary
+	THEME
+	Partials, Layouts, Templates, etc...
 */
-@import './elements/backgrounds';
-@import './elements/base';
-@import './elements/forms';
-@import './elements/fx';
-@import './elements/grid';
-@import './elements/margin';
-@import './elements/menus';
-@import './elements/padding';
-@import './elements/position';
-@import './elements/type';
-@import './elements/z-index';
+
+// Sitewide Styles
+@import 'theme';
 
 
-/* ============================================== 
-	THEME 
-*/
-// Modules
-@import './theme/modules/branding';
-@import './theme/modules/buttons';
-@import './theme/modules/gallery';
-@import './theme/modules/navigation';
-@import './theme/modules/woo';
-@import './theme/modules/vendor/owl-carousel-theme';
-
+// Components
+@import 
+	'components/resets/jumbotron',
+	'components/background',
+	'components/branding',
+	'components/fx',
+	'components/vendor/headroom',
+	'components/vendor/mega-menu';
 
 // Partials
-@import './theme/parts/header';
-@import './theme/parts/footer';
-@import './theme/parts/sidebar';
+@import
+	'partials/header',
+	'partials/footer',
+	'partials/sidebar';
 
-// Global
-@import './theme/global/404';
-@import './theme/global/index';
-@import './theme/global/page';
-@import './theme/global/archive';
-@import './theme/global/blog';
-@import './theme/global/search';
-@import './theme/global/single';
+// Layouts
+@import 
+	'layouts/404',
+	'layouts/page',
+	'layouts/archive',
+	'layouts/blog',
+	'layouts/search',
+	'layouts/single';
 
 // Templates
-@import './theme/templates/template-name';
+@import 'templates/template-name';
 
 // Pages
-@import './theme/pages/home';
-
+@import 'pages/home';
 
 /* ============================================== 
 	TESTS
 */
-// @import './tests';
+// @import 'tests';

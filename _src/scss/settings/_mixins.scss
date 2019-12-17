@@ -1,0 +1,145 @@
+// Headings
+@mixin headings( $from: 1, $to: 6 ) {
+    @for $i from $from through $to {
+		h#{$i} {
+			@content;
+		}
+    }
+}
+
+
+// Removes the focus ring around an element when a mouse input is detected.
+@mixin disable-mouse-outline {
+	[data-whatinput='mouse'] & {
+		outline: 0;
+	}
+}
+
+// OVERLAYS
+@mixin overlay-solid (
+    $selector,
+    $color,
+    $z-index,
+    $height,
+    $transition
+)
+{
+    &::#{$selector} {
+        content: '';
+    
+        background-color: $color;
+        display: block;
+        position: absolute;
+        z-index: $z-index;
+        
+        height: $height;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        transition: $transition;
+    }
+}
+
+
+@mixin overlay-linear-gradient (
+    $selector,
+    $z-index,
+    $height,
+    $direction,
+    $color-stops...    
+) 
+
+{
+    @if is-direction($direction) == false {
+        $color-stops: ($direction, $color-stops);
+        $direction: 180deg;
+    }
+
+    @if ($selector == before) {
+        &::before{
+        content: '';
+
+        background: linear-gradient($direction, $color-stops);
+        display: block;
+        position: absolute;
+        z-index: $z-index;
+        
+        height: $height;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        }
+    }
+
+    @if ($selector == after) {
+        &::after{
+        content: '';
+
+        background: linear-gradient($direction, $color-stops);
+        display: block;
+        position: absolute;
+        z-index: $z-index;
+        
+        height: $height;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        }
+    }
+}
+
+@mixin overlay-radial-gradient (
+    $selector,
+    $z-index,
+    $height,
+    $width,
+    $direction,
+    $color-stops... 
+)
+
+{   
+    @if is-direction($direction) == false {
+        $color-stops: ($direction, $color-stops);
+        $direction: circle;
+    }
+
+    @if ($selector == before) {
+        &::before{
+        content: '';
+
+        background: radial-gradient($direction, $color-stops);
+        display: block;
+        position: absolute;
+        z-index: $z-index;
+        
+        height: $height;
+        width: $width;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        }
+    }
+
+    @if ($selector == after) {
+        &::after{
+        content: '';
+
+        background: radial-gradient($direction, $color-stops);
+        display: block;
+        position: absolute;
+        z-index: $z-index;
+        
+        height: $height;
+        width: $width;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        }
+    }
+}
