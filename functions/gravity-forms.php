@@ -1,6 +1,6 @@
 <?php
 
-if ( class_exists( 'GFForms' ) && true === is_plugin_active( 'gravityforms/gravityforms.php' ) ) {
+if ( class_exists( 'GFForms' ) ) {
 
 	// Move Gravity Forms scripts to the footer
 	add_filter( 'gform_init_scripts_footer', '__return_true' );
