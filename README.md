@@ -1,5 +1,5 @@
 # WP Starter
-A starter WordPress theme to help you get started building custom sites. **[Now in version 2!](https://github.com/lopadz/wp-starter/releases)**
+Yet another WordPress theme to help you get started building custom sites. **[Now in version 2!](https://github.com/lopadz/wp-starter/releases)**
 
 ## New Changes & Updates
 - **Re-built** and integrated with [Bootstrap 4](https://getbootstrap.com/)
@@ -8,7 +8,7 @@ A starter WordPress theme to help you get started building custom sites. **[Now 
 - New **integrations** with [WooCommerce](https://woocommerce.com/) and [Gravity Forms](https://www.gravityforms.com/)
 - New page/post **Layout Builder** powered by [ACF](https://www.advancedcustomfields.com/)
 
-## Recommended Dev Wokflow
+## Recommended Dev Workflow
 - Edit with [VS Code](https://code.visualstudio.com/)
 - Manage dependencies with [Yarn](https://yarnpkg.com/)
 - Compile with [Codekit](https://codekitapp.com/) or [Prepros](https://prepros.io/)
