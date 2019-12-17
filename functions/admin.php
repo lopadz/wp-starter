@@ -6,15 +6,11 @@
 add_action( 'admin_menu', 'wps_disable_default_dashboard_widgets' );
 
 function wps_disable_default_dashboard_widgets() {
-	remove_meta_box( 'dashboard_right_now', 'dashboard', 'core' );       // Right Now Widget
 	remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'core' ); // Comments Widget
 	remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'core' );  // Incoming Links Widget
-	remove_meta_box( 'dashboard_plugins', 'dashboard', 'core' );         // Plugins Widget
 	Remove_meta_box( 'dashboard_quick_press', 'dashboard', 'core' );     // Quick Press Widget
 	remove_meta_box( 'dashboard_recent_drafts', 'dashboard', 'core' );   // Recent Drafts Widget
 	remove_meta_box( 'dashboard_primary', 'dashboard', 'core' );
-	remove_meta_box( 'dashboard_secondary', 'dashboard', 'core' );
-	remove_meta_box( 'yoast_db_widget', 'dashboard', 'normal' );         // Yoast's SEO Plugin Widget
 }
 
 
@@ -38,6 +34,33 @@ function wps_login_redirect( $url, $request, $user ) {
 	}
 	return $url;
 }
+
+
+// Function that outputs the contents of the dashboard widget
+function wps_dashboard_widget_callback( $post, $callback_args ) {
+	echo '
+	<div id="custom-widget"></div>
+	<script>
+		jQuery( function($) {
+			$( document ).ready( function() {
+				$( "#custom-widget" ).load( "https://url.com/filename.php", function( responseTxt, statusTxt, xhr ) {
+					if( "success" === statusTxt )
+						$(this).html();
+				});
+			});
+		});
+	</script>
+	';
+}
+
+// Function used in the action hook
+function wps_add_dashboard_widgets() {
+	add_meta_box( 'id', 'News & Support', 'wps_dashboard_widget_callback', 'dashboard', 'side', 'high' );
+}
+
+// Register the new dashboard widget with the 'wp_dashboard_setup' action
+add_action( 'wp_dashboard_setup', 'wps_add_dashboard_widgets' );
+
 
 // Reorder Admin Menu Links
 // Based on: https://wordpress.stackexchange.com/questions/276230/how-can-i-control-the-position-in-the-admin-menu-of-items-added-by-plugins?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
@@ -69,4 +92,3 @@ function wps_custom_menu_order( $menu_ord ) {
 		'separator-last', // Last separator
 	);
 }
-
