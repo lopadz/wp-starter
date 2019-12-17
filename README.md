@@ -15,6 +15,7 @@ Yet another WordPress theme to help you build custom sites. **[Now on version 2!
 - Manage dependencies with [Yarn](https://yarnpkg.com/)
 - Compile with [Codekit](https://codekitapp.com/) or [Prepros](https://prepros.io/)
 - Develop locally with [Laravel Valet](https://laravel.com/docs/6.x/valet) (Mac Only)
+- Need a Makefile that spins a new WP install with this theme? [We've got that too!](https://gist.github.com/lopadz/5c74fdca7c988d06afbcc76a32a55efb)
 
 ## File Structure
 If you're not a fan of the [template hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/) in WP, give this theme a try! Using conditional logic and custom functions like **wps_get_file()** you can load any file you want plus a few more tricks (like passing data to the included file 😀).
