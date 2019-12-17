@@ -6,7 +6,7 @@
             {
                 "key": "field_5d77f10549e32",
                 "label": "Top Banner",
-                "name": "template-layout-builder1-top_banner",
+                "name": "template-lb1-top_banner",
                 "type": "clone",
                 "instructions": "",
                 "required": 0,
@@ -27,7 +27,7 @@
             {
                 "key": "field_5d77d5be8bd4d",
                 "label": "Content Sections",
-                "name": "template-layout-builder1",
+                "name": "template-lb1",
                 "type": "flexible_content",
                 "instructions": "",
                 "required": 0,
@@ -40,7 +40,7 @@
                 "layouts": {
                     "layout_5d77d5e161830": {
                         "key": "layout_5d77d5e161830",
-                        "name": "layout-builder1-html",
+                        "name": "lb1-html",
                         "label": "Plain HTML",
                         "display": "block",
                         "sub_fields": [
@@ -71,7 +71,7 @@
                     },
                     "layout_5d77d6938bd4e": {
                         "key": "layout_5d77d6938bd4e",
-                        "name": "layout-builder1-columns",
+                        "name": "lb1-columns",
                         "label": "Columns",
                         "display": "block",
                         "sub_fields": [
@@ -102,7 +102,7 @@
                     },
                     "layout_5d77d6a68bd4f": {
                         "key": "layout_5d77d6a68bd4f",
-                        "name": "layout-builder1-hero",
+                        "name": "lb1-hero",
                         "label": "Hero",
                         "display": "block",
                         "sub_fields": [
@@ -133,7 +133,7 @@
                     },
                     "layout_5d7a83ee839aa": {
                         "key": "layout_5d7a83ee839aa",
-                        "name": "layout-builder1-carousel",
+                        "name": "lb1-carousel",
                         "label": "Carousel",
                         "display": "block",
                         "sub_fields": [
@@ -164,7 +164,7 @@
                     },
                     "layout_5dd93a2ae01e9": {
                         "key": "layout_5dd93a2ae01e9",
-                        "name": "layout-builder1-tabs",
+                        "name": "lb1-tabs",
                         "label": "Tabs",
                         "display": "block",
                         "sub_fields": [
@@ -195,7 +195,7 @@
                     },
                     "layout_5ddd3fe84969b": {
                         "key": "layout_5ddd3fe84969b",
-                        "name": "layout-builder1-cards",
+                        "name": "lb1-cards",
                         "label": "Cards",
                         "display": "block",
                         "sub_fields": [
@@ -235,7 +235,7 @@
                 {
                     "param": "page_template",
                     "operator": "==",
-                    "value": "templates\/layout-builder1.php"
+                    "value": "default"
                 }
             ]
         ],
